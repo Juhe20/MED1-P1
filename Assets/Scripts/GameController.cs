@@ -63,6 +63,6 @@ public class GameController : MonoBehaviour
 
     public static void KillPlayer()
     {
-        Debug.Log("You dead"); //Skriv en kode der sætter gang i death anim. + sætter spilleren tilbage til starten:-)
+         //Skriv en kode der sætter gang i death anim. + sætter spilleren tilbage til starten:-)
     }
 }

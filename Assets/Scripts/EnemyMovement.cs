@@ -46,7 +46,7 @@ public class EnemyMovement : MonoBehaviour
 
     void Attack() 
     {
-        Debug.Log("Hit");
+        
         if (!Hit)
             GameController.DamagePlayer(1);
         StartCoroutine(CoolDown());
