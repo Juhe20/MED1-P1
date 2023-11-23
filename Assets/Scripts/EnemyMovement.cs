@@ -9,7 +9,7 @@ public class EnemyMovement : MonoBehaviour
     public GameObject player;
     public float speed;
     public float distanceBetween;
-    public float AttackRange = 0.5f;
+    public float AttackRange = 1f;
     public float Cooldown;
     private bool Hit = false;
 
@@ -40,7 +40,6 @@ public class EnemyMovement : MonoBehaviour
         if (Vector3.Distance(transform.position, player.transform.position) <= AttackRange)
         {
             Attack();
-
         }
     }
 
@@ -48,8 +47,13 @@ public class EnemyMovement : MonoBehaviour
     {
         
         if (!Hit)
+        {
+            GameController.Manachange(-1); //Test for at se om UI Mana virker. Skal flyttes
             GameController.DamagePlayer(1);
-        StartCoroutine(CoolDown());
+            StartCoroutine(CoolDown());
+            
+        }
+
 
     }
     private IEnumerator CoolDown()

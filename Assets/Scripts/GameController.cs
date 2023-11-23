@@ -12,6 +12,7 @@ public class GameController : MonoBehaviour
     private static int maxHealth = 10;
     private static int mana = 5;
     private static int maxMana = 10;
+    private static int minMana = 0;
     private static float moveSpeed = 3.0f;
     private static float fireRate = 1.5f;
     private static bool shield = false;
@@ -23,6 +24,8 @@ public class GameController : MonoBehaviour
     public static int Mana { get => mana; set => mana= value; }
 
     public static int MaxMana { get => maxMana; set => maxMana = value; }
+
+    public static int MinMana { get => minMana; set => minMana = value; }
 
     public static float MoveSpeed { get => moveSpeed; set => moveSpeed = value; }
 
@@ -44,6 +47,12 @@ public class GameController : MonoBehaviour
     public static void HealPlayer(int heal)
     {
         health = Mathf.Min(maxHealth, health + heal);
+    }
+
+    public static void Manachange(int manaChange) 
+    {
+        mana = Mathf.Min(maxMana, mana + manaChange);
+        mana = Mathf.Max(minMana, mana + manaChange); //Skulle gerne gøre at mana ikke kan at, mana < 0
     }
 
     public static void MoveSpeedChange(float speed)
