@@ -15,7 +15,7 @@ public class EnemyMovement : MonoBehaviour
     }
 
     
-    void Update()
+    void FixedUpdate()
     {
         //Måler længden mellem enemy og player
         distance = Vector2.Distance(transform.position,player.transform.position);
