@@ -18,6 +18,7 @@ public class GameController : MonoBehaviour
     private static float fireRate = 1.5f;
     private static bool shield = false;
 
+
     public static int Health { get => health; set => health = value; }
 
     public static int MaxHealth { get => maxHealth; set => maxHealth = value; }
@@ -32,12 +33,13 @@ public class GameController : MonoBehaviour
 
     public static float FireRate { get => fireRate; set => fireRate = value; }
 
-    public static bool Shield { get => shield; set => shield = value; } //virker mÂske
+    public static bool Shield { get => shield; set => shield = value; } //virker m√•ske
 
 
-    public static void DamagePlayer(int damange)
+
+    public static void DamagePlayer(int TakeDamage)
     { 
-        health -= damange;
+        health -= TakeDamage; //decrease amount of health based on value of parameter
 
         if (health <= 0)
         {
@@ -53,7 +55,7 @@ public class GameController : MonoBehaviour
     public static void Manachange(int manaChange) 
     {
         mana = Mathf.Min(maxMana, mana + manaChange);
-        mana = Mathf.Max(minMana, mana + manaChange); //Skulle gerne g¯re at mana ikke kan at, mana < 0
+        mana = Mathf.Max(minMana, mana + manaChange); //Skulle gerne g√∏re at mana ikke kan at, mana < 0
     }
 
     public static void MoveSpeedChange(float speed)
