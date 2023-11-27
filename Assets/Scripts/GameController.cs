@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.InteropServices.WindowsRuntime;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameController : MonoBehaviour
 {
@@ -63,6 +64,6 @@ public class GameController : MonoBehaviour
 
     public static void KillPlayer()
     {
-         //Skriv en kode der sætter gang i death anim. + sætter spilleren tilbage til starten:-)
+        SceneManager.LoadScene(0);
     }
 }
