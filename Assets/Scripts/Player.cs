@@ -10,8 +10,14 @@ public class Player : MonoBehaviour
     float horizontal;
 
     public float speedLimit = 0.5f;
-
     public float moveSpeed;
+
+    Vector2 mousePos;
+    Vector2 mouseDis;
+
+    //Camera is referenced to track mouse position in void update
+    public Camera cam;
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -22,6 +28,8 @@ public class Player : MonoBehaviour
     {
         horizontal = Input.GetAxisRaw("Horizontal");
         vertical = Input.GetAxisRaw("Vertical");
+
+        mousePos = cam.ScreenToWorldPoint(Input.mousePosition);
     }
 
     private void FixedUpdate()
@@ -33,5 +41,9 @@ public class Player : MonoBehaviour
         }
 
         rb.velocity = new Vector2(horizontal * moveSpeed, vertical * moveSpeed);
+
+        Vector2 lookDir = mousePos - rb.position;
+        float angle = Mathf.Atan2(lookDir.y, lookDir.x) * Mathf.Rad2Deg -90f;
+        rb.rotation = angle;
     }
 }
