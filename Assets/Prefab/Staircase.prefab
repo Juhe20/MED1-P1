@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2319354665601470595}
   - component: {fileID: 5217508674414083536}
   - component: {fileID: -8583903890675534564}
-  - component: {fileID: 2045036403983327769}
+  - component: {fileID: 4726016503401591269}
   m_Layer: 0
   m_Name: Staircase
   m_TagString: Staircase
@@ -131,7 +131,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &2045036403983327769
+--- !u!114 &4726016503401591269
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -140,6 +140,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 206515866427689505}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 59920d2c12f4f524489431704146bfa1, type: 3}
+  m_Script: {fileID: 11500000, guid: b77e5c782196f3345bc4aad9ab4437a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
