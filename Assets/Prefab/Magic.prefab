@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 7518767270250115213}
   m_Layer: 0
   m_Name: Magic
-  m_TagString: Untagged
+  m_TagString: PlayerAttack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -100,7 +100,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 1
-  EnemyPrefab: {fileID: 5814679369850646826, guid: bcc3d125bfba84017abc3ff5ba774358, type: 3}
 --- !u!70 &6519736559125064765
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

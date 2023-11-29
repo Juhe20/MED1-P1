@@ -51,7 +51,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speedLimit: 1
-  moveSpeed: 2
+  moveSpeed: 3
+  dashSpeed: 15
+  dashDuration: 0.2
+  dashCooldown: 5
+  cam: {fileID: 0}
 --- !u!50 &-4890011797557062483
 Rigidbody2D:
   serializedVersion: 4
@@ -181,7 +185,7 @@ MonoBehaviour:
   castPoint: {fileID: 5763613866526087805}
   meleePoint: {fileID: 4561287562268678457}
   magicPrefab: {fileID: 486863206543092467, guid: 7a008d30895c27f468bda944e1f7984a, type: 3}
-  magicForce: 3
+  MeleePrefab: {fileID: 7562638323481482922}
 --- !u!1 &7562638323481482922
 GameObject:
   m_ObjectHideFlags: 0
@@ -193,10 +197,9 @@ GameObject:
   - component: {fileID: 4561287562268678457}
   - component: {fileID: 8426641907131470297}
   - component: {fileID: 5440070668361137268}
-  - component: {fileID: 4841565176106763078}
   m_Layer: 0
   m_Name: meleePoint
-  m_TagString: Untagged
+  m_TagString: PlayerAttack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -313,27 +316,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.2, y: 0.1}
   m_EdgeRadius: 0
---- !u!95 &4841565176106763078
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7562638323481482922}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: a088d222bcff64a4b98baa328bce49e1, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &8388409424185757430
 GameObject:
   m_ObjectHideFlags: 0
