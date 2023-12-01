@@ -14,9 +14,10 @@ public class GameController : MonoBehaviour
     private static int mana = 5;
     private static int maxMana = 10;
     private static int minMana = 0;
-    private static float moveSpeed = 3.0f;
-    private static float fireRate = 1.5f;
-    private static bool shield = false;
+    private static float moveSpeed = 1.0f;
+    private static float damage = 1.0f;
+    private static int shield = 0;
+    private static bool revive = false;
 
 
     public static int Health { get => health; set => health = value; }
@@ -31,9 +32,11 @@ public class GameController : MonoBehaviour
 
     public static float MoveSpeed { get => moveSpeed; set => moveSpeed = value; }
 
-    public static float FireRate { get => fireRate; set => fireRate = value; }
+    public static float Damage { get => damage; set => damage= value; }
 
-    public static bool Shield { get => shield; set => shield = value; } //virker måske
+    public static int Shield { get => shield; set => shield = value; }
+
+    public static bool Revive { get => revive; set => revive = value; } //virker måske
 
 
 
@@ -43,7 +46,17 @@ public class GameController : MonoBehaviour
 
         if (health <= 0)
         {
-            KillPlayer();
+            if (GameController.revive == true)
+            {
+                Debug.Log(revive);
+                GameController.HealPlayer(4);
+                GameController.revive = false;
+            }
+            else 
+            {
+                KillPlayer();
+            }
+            
         }
     }
 
@@ -55,7 +68,7 @@ public class GameController : MonoBehaviour
     public static void Manachange(int manaChange) 
     {
         mana = Mathf.Min(maxMana, mana + manaChange);
-        mana = Mathf.Max(minMana, mana + manaChange); //Skulle gerne gøre at mana ikke kan at, mana < 0
+        mana = Mathf.Max(minMana, mana + manaChange); //gør at mana < 0
     }
 
     public static void MoveSpeedChange(float speed)
@@ -63,18 +76,29 @@ public class GameController : MonoBehaviour
         moveSpeed += speed;
     }
 
-    public static void FireRateChange(float rate)
+    public static void DamageChange(float damageChange)
     {
-        fireRate -= rate;
+        damage += damageChange;
     }
 
-    public static void shieldSet() 
+
+
+    public static void shieldSet(int shieldSize) 
     { 
-        shield = true;
+        shield += shieldSize;
+    }
+
+    public static void reviveSet(bool ReviveChange)
+    {
+        revive = ReviveChange;
     }
 
     public static void KillPlayer()
     {
         SceneManager.LoadScene(0);
+        health = 5;
+        mana = 5;
+        moveSpeed = 1.0f;
+        damage = 1.0f;
     }
 }

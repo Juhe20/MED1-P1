@@ -9,7 +9,7 @@ public class Movement : MonoBehaviour
     float vertical;
     float horizontal;
 
-    public float speedLimit = 0.5f;
+    public float speedLimit = GameController.MoveSpeed*0.5f;
     public float moveSpeed;
 
     Vector2 mousePos;
@@ -30,6 +30,9 @@ public class Movement : MonoBehaviour
         vertical = Input.GetAxisRaw("Vertical");
 
         mousePos = cam.ScreenToWorldPoint(Input.mousePosition);
+
+        speedLimit = GameController.MoveSpeed/moveSpeed;
+        moveSpeed = GameController.MoveSpeed;
     }
 
     private void FixedUpdate()
