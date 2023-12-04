@@ -9,9 +9,11 @@ public class EnemyMovement : MonoBehaviour
     public GameObject player;
     public float speed;
     public float distanceBetween;
-    public float AttackRange = 1f;
+    public float AttackRange = 1.1f;
     public float Cooldown;
     private bool Hit = false;
+
+    public int enemyDamage = 2;
 
     private float distance;
     private float canAttack;
@@ -29,7 +31,8 @@ public class EnemyMovement : MonoBehaviour
         direction.Normalize();
         //Til at rotere enemy, Atan2 bruges til at finde vinkel mellem to punkter
         float angle = Mathf.Atan2(direction.y,direction.x)*Mathf.Rad2Deg;
-        
+
+
         if (distance < distanceBetween)
         {
             //Får enemy til at bevæge sig

@@ -27,7 +27,12 @@ public class Attack : MonoBehaviour
 
         if (Input.GetButtonDown("Fire2"))
         {
-            castMagic();
+            if (GameController.Mana > 0)
+            {
+                GameController.Mana--;
+                castMagic();
+            }
+            
         }
     }
 

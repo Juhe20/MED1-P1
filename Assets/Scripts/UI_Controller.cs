@@ -12,7 +12,7 @@ public class UI_Controller : MonoBehaviour
     float fillmana;
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
 
         //Health UI update
