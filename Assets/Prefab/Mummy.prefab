@@ -75,7 +75,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 1, g: 0.050943315, b: 0.050943315, a: 1}
   m_FlipX: 0
@@ -100,8 +100,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 5568834969184388673, guid: d8b2f3e818664fe499112656b028b194, type: 3}
-  speed: 1
+  speed: 2
   distanceBetween: 6
+  AttackRange: 1
+  Cooldown: 0
+  attackDamage: 5
+  attackSpeed: 1
 --- !u!61 &5687495629391385428
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -155,7 +159,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 206515866427689505}
-  m_BodyType: 0
+  m_BodyType: 2
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0

@@ -37,9 +37,9 @@ public class Attack : MonoBehaviour
         {
             MeleePrefab.SetActive(true);
             isAttacking = true;
-
-        }
+        }        
     }
+
 
     void castMagic()
     {

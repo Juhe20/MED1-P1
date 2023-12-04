@@ -14,10 +14,12 @@ public class EnemyMovement : MonoBehaviour
     private bool Hit = false;
 
     private float distance;
-    void Start()
-    {
-        
-    }
+    private float canAttack;
+    private Transform target;
+
+    [SerializeField] private float attackDamage = 5f;
+    [SerializeField] private float attackSpeed = 1f;
+
 
     
     void FixedUpdate()
@@ -43,19 +45,44 @@ public class EnemyMovement : MonoBehaviour
         }
     }
 
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            if (attackSpeed >= canAttack)
+            {
+                GameController.DamagePlayer(1);
+                Debug.Log(GameController.Health);
+                canAttack = 0f;
+                //add force to player
+            }
+            else
+            {
+                canAttack += Time.deltaTime;
+            }
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            target = transform;
+        }
+    }
+
     void Attack() 
     {
-        
         if (!Hit)
         {
-            GameController.Manachange(-1); //Test for at se om UI Mana virker. Skal flyttes
             GameController.DamagePlayer(1);
             StartCoroutine(CoolDown());
-            
         }
-
-
     }
+
+
+
+
     private IEnumerator CoolDown()
     {
         Hit = true;
