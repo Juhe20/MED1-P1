@@ -11,6 +11,9 @@ public class UI_Controller : MonoBehaviour
     public GameObject Manabar;
     float fillmana;
 
+    public GameObject Seth;
+    float Sethfill;
+
     // Update is called once per frame
     void FixedUpdate()
     {
@@ -24,6 +27,7 @@ public class UI_Controller : MonoBehaviour
         fillmana = (float)GameController.Mana;
         fillmana = fillmana / GameController.MaxMana;
         Manabar.GetComponent<Image>().fillAmount = fillmana;
+
 
     }
 }

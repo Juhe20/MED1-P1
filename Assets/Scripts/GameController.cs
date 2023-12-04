@@ -42,7 +42,7 @@ public class GameController : MonoBehaviour
 
     public static void DamagePlayer(int TakeDamage)
     { 
-        health -= TakeDamage; //decrease amount of health based on value of parameter
+        health -= TakeDamage - shield; //decrease amount of health based on value of parameter
 
         if (health <= 0)
         {
