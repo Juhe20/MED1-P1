@@ -17,7 +17,6 @@ public class EnemyMovement : MonoBehaviour
     private float canAttack;
     private Transform target;
 
-    [SerializeField] private float attackDamage = 5f;
     [SerializeField] private float attackSpeed = 1f;
 
 
