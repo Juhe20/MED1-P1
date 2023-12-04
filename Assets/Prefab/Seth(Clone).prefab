@@ -76,7 +76,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 3354014505007186069, guid: 40765c501a6cc0e49a36a5d010209fa2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -128,7 +128,7 @@ MonoBehaviour:
   speedChange: 0
   manaChange: -4
   damageChange: 0
-  shield: 0
+  shieldSize: 0
   revive: 0
 --- !u!50 &-8073029597003325700
 Rigidbody2D:
