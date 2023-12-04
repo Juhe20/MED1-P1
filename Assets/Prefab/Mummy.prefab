@@ -104,9 +104,9 @@ MonoBehaviour:
   distanceBetween: 6
   AttackRange: 1
   Cooldown: 0
-  attackDamage: 5
+  enemyDamage: 2
   attackSpeed: 1
-
+  
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
