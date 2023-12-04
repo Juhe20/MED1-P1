@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Boon : MonoBehaviour
@@ -7,6 +5,11 @@ public class Boon : MonoBehaviour
     public string Name;
     public string Description;
     public Sprite Image;
+    private static bool boonCollision = false;
+    private static int boonsCollected = 0;
+    public static int BoonsCollected { get => boonsCollected; set => boonsCollected = value; }
+    public static bool BoonCollision { get => boonCollision; set => boonCollision = value; }
+    
 
     public int healthChange;
     public float speedChange;
@@ -23,21 +26,27 @@ public class Boon : MonoBehaviour
     }
 
     // Update is called once per frame
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnCollisionStay2D(Collision2D collision)
     {
 
-        if (collision.tag == "Player") 
+        if (collision.gameObject.CompareTag("Player"))
         {
-            GameController.HealPlayer(healthChange);
-            GameController.Manachange(manaChange);
-            GameController.MoveSpeedChange(speedChange);
-            GameController.DamageChange(damageChange);
-            GameController.shieldSet(shieldSize);
-            GameController.reviveSet(revive);
-            Debug.Log(revive);
-            Destroy(gameObject);
+            if (Input.GetKey("e"))
+            {
+                boonsCollected++;
+                BoonCollision = true;
+                GameController.HealPlayer(healthChange);
+                GameController.Manachange(manaChange);
+                GameController.MoveSpeedChange(speedChange);
+                GameController.DamageChange(damageChange);
+                GameController.shieldSet(shieldSize);
+                GameController.reviveSet(revive);
+                Debug.Log(revive);
+                gameObject.SetActive(false);
+                GameController.MoveSpeed = 0;
+                
+            }
         }
-
     }
 
 }

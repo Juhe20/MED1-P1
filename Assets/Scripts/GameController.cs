@@ -8,7 +8,6 @@ public class GameController : MonoBehaviour
 {
 
     public static bool Dead = false;
-
     private static int health = 5;
     private static int maxHealth = 10;
     private static int mana = 5;
@@ -18,8 +17,9 @@ public class GameController : MonoBehaviour
     private static float damage = 1.0f;
     private static int shield = 0;
     private static bool revive = false;
+    private static int collectedTablets = 0;
 
-
+    public static int CollectedTablets { get => collectedTablets; set => collectedTablets = value; }
     public static int Health { get => health; set => health = value; }
 
     public static int MaxHealth { get => maxHealth; set => maxHealth = value; }
@@ -37,7 +37,6 @@ public class GameController : MonoBehaviour
     public static int Shield { get => shield; set => shield = value; }
 
     public static bool Revive { get => revive; set => revive = value; } //virker måske
-
 
 
     public static void DamagePlayer(int TakeDamage)
