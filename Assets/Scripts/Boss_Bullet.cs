@@ -6,7 +6,7 @@ public class Boss_Bullet : MonoBehaviour
 {
     GameObject target;
     public float speed = 1.5f;
-    int damage = 2;
+    int damage = 1;
     Rigidbody2D bulletrb;
 
     // Update is called once per frame
