@@ -16,10 +16,11 @@ public class EnemyMovement : MonoBehaviour
     public int enemyDamage = 2;
 
     private float distance;
-    void Start()
-    {
-        
-    }
+    private float canAttack;
+    private Transform target;
+
+    [SerializeField] private float attackSpeed = 1f;
+
 
     
     void FixedUpdate()
@@ -46,29 +47,44 @@ public class EnemyMovement : MonoBehaviour
         }
     }
 
-    void Attack() 
+    private void OnTriggerStay2D(Collider2D collision)
     {
-        
-        if (!Hit)
+        if (collision.gameObject.CompareTag("Player"))
         {
-            if (GameController.Shield == 1)
+            if (attackSpeed >= canAttack)
             {
-                enemyDamage = enemyDamage - GameController.Shield;
-                StartCoroutine(CoolDown());
-                GameController.DamagePlayer(enemyDamage);
-                Debug.Log(enemyDamage);
-                enemyDamage = 2;
+                GameController.DamagePlayer(1);
+                Debug.Log(GameController.Health);
+                canAttack = 0f;
+                //add force to player
             }
             else
             {
-                enemyDamage = 2;
-                StartCoroutine(CoolDown());
-                GameController.DamagePlayer(enemyDamage);
+                canAttack += Time.deltaTime;
             }
         }
-
-
     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            target = transform;
+        }
+    }
+
+    void Attack() 
+    {
+        if (!Hit)
+        {
+            GameController.DamagePlayer(1);
+            StartCoroutine(CoolDown());
+        }
+    }
+
+
+
+
     private IEnumerator CoolDown()
     {
         Hit = true;

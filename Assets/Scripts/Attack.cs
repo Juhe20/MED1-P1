@@ -7,12 +7,19 @@ public class Attack : MonoBehaviour
     public Transform castPoint;
     public Transform meleePoint;
     public GameObject magicPrefab;
+    public GameObject MeleePrefab;
+ 
+    float magicForce = 10f;
+    float attackDuration = 0.5f;
+    float attackTimer = 0f;
 
-    public float magicForce = 10f;
+    bool isAttacking = false;
 
     // Update is called once per frame
     void Update()
     {
+        CheckAttackTimer();
+
         if (Input.GetButtonDown("Fire1"))
         {
             meleeAttack();
@@ -31,8 +38,13 @@ public class Attack : MonoBehaviour
 
     void meleeAttack()
     {
-
+        if (!isAttacking)
+        {
+            MeleePrefab.SetActive(true);
+            isAttacking = true;
+        }        
     }
+
 
     void castMagic()
     {
@@ -42,5 +54,19 @@ public class Attack : MonoBehaviour
         Rigidbody2D rb = magic.GetComponent<Rigidbody2D>();
         //We use rb to access a function on the component adding a force in the "up direction".
         rb.AddForce(castPoint.up * magicForce, ForceMode2D.Impulse);
+    }
+
+    void CheckAttackTimer()
+    {
+        if (isAttacking)
+        {
+            attackTimer += Time.deltaTime;
+            if(attackTimer >= attackDuration)
+            {
+                attackTimer = 0;
+                isAttacking = false;
+                MeleePrefab.SetActive(false);
+            }
+        }
     }
 }
