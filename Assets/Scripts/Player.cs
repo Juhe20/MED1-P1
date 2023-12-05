@@ -49,4 +49,40 @@ public class Movement : MonoBehaviour
         float angle = Mathf.Atan2(lookDir.y, lookDir.x) * Mathf.Rad2Deg -90f;
         rb.rotation = angle;
     }
+
+    private void OnCollisionStay2D(Collision2D collision)
+    {
+        Debug.Log(collision.gameObject.tag);
+        Debug.Log(GameController.GodDialogue);
+
+            if (collision.gameObject.CompareTag("tefnut"))
+        {
+                GameController.GodDialogue = 1;
+            }
+            else if (collision.gameObject.CompareTag("seth"))
+        {
+                GameController.GodDialogue = 2;
+            }
+            else if (collision.gameObject.CompareTag("shu"))
+            {
+                GameController.GodDialogue = 3;
+            }
+            else if (collision.gameObject.CompareTag("nut"))
+            {
+                GameController.GodDialogue = 4;
+            }
+            else if (collision.gameObject.CompareTag("geb"))
+        {
+                GameController.GodDialogue = 5;
+            }
+            else if (collision.gameObject.CompareTag("osiris"))
+        {
+                GameController.GodDialogue = 6;
+            }
+            else
+            {
+                GameController.GodDialogue = 0;
+            }
+
+    }
 }

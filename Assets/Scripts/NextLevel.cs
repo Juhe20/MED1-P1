@@ -5,15 +5,16 @@ using UnityEngine.SceneManagement;
 
 public class NextLevel : MonoBehaviour
 {
-
-    int nextScene;
+    private static int nextScene;
+    public static int NextScene { get { return nextScene; } }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
 
         if (collision.gameObject.CompareTag("Player"))
         {
-            nextScene++;
+            nextScene += 1;
+            Debug.Log(nextScene);
             SceneManager.LoadScene(nextScene);
         }
 

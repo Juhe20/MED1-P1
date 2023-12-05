@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 40765c501a6cc0e49a36a5d010209fa2
+guid: 0259ed440d2f20448b137ef2edbf7842
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -95,7 +95,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 0
+  platformSettingsDirtyTick: 638373829295965324
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -119,18 +119,18 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: Seth_Frame_0
+  - name: OsirisProtrait
     originalName: 
-    pivot: {x: 0.5, y: 0}
+    pivot: {x: 0.5, y: -0.1851852}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 20
-      height: 32
-    spriteID: 10e6477c9328c3547bba23ca5242644d
+      width: 28
+      height: 54
+    spriteID: bc011ed2d57fce14b934b8d35b2636f0
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -139,138 +139,62 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 4, y: 4}
-  - name: Seth_Frame_1
-    originalName: 
-    pivot: {x: 0.5, y: 0}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 44
-      width: 20
-      height: 32
-    spriteID: c2a41b5f22a5fde4eb2ff96b9d72d030
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 4, y: 44}
-  - name: Seth_Frame_2
-    originalName: 
-    pivot: {x: 0.5, y: 0}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 84
-      width: 20
-      height: 32
-    spriteID: 7414dc3bc20ab944a9d430fa8744cd6b
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 4, y: 84}
-  - name: Seth_Frame_3
-    originalName: 
-    pivot: {x: 0.5, y: 0}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 32
-      y: 4
-      width: 20
-      height: 32
-    spriteID: a9172d21aee24ae4b8d399cdbef11f3c
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 32, y: 4}
-  - name: Seth_Frame_4
-    originalName: 
-    pivot: {x: 0.42105263, y: 0}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 32
-      y: 44
-      width: 19
-      height: 24
-    spriteID: 8a9ae992737a2ca4aa903e4b7ce690c0
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 32, y: 44}
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    guid: 1558396802
-    name: Seth
+    guid: -1013485382
+    name: OsirisProtrait
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: Seth_Frame_0
+    - name: OsirisProtrait
       frameIndex: 0
       cellRect:
-        x: 6
-        y: 0
-        width: 20
-        height: 32
-      spriteId: 10e6477c9328c3547bba23ca5242644d
-    - name: Seth_Frame_1
-      frameIndex: 1
-      cellRect:
-        x: 6
-        y: 0
-        width: 20
-        height: 32
-      spriteId: c2a41b5f22a5fde4eb2ff96b9d72d030
-    - name: Seth_Frame_2
-      frameIndex: 2
-      cellRect:
-        x: 6
-        y: 0
-        width: 20
-        height: 32
-      spriteId: 7414dc3bc20ab944a9d430fa8744cd6b
-    - name: Seth_Frame_3
-      frameIndex: 3
-      cellRect:
-        x: 6
-        y: 0
-        width: 20
-        height: 32
-      spriteId: a9172d21aee24ae4b8d399cdbef11f3c
-    - name: Seth_Frame_4
-      frameIndex: 4
-      cellRect:
-        x: 8
-        y: 0
-        width: 19
-        height: 24
-      spriteId: 8a9ae992737a2ca4aa903e4b7ce690c0
+        x: 18
+        y: 10
+        width: 28
+        height: 54
+      spriteId: bc011ed2d57fce14b934b8d35b2636f0
     linkedCells: []
     parentIndex: -1
-  platformSettings: []
+  platformSettings:
+  - name: DefaultTexturePlatform
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Standalone
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Server
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
   secondarySpriteTextures: []
   spritePackingTag: 
-  canvasSize: {x: 32, y: 32}
+  canvasSize: {x: 64, y: 64}

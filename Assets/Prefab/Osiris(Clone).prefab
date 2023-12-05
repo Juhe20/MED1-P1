@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &4944421044282605314
+--- !u!1 &9173001319361320956
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,26 +8,26 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 3316558708365524202}
-  - component: {fileID: 8941178680454857740}
-  - component: {fileID: 2996258242754399371}
-  - component: {fileID: -1109848779657049845}
-  - component: {fileID: -2616544391562751496}
-  - component: {fileID: -7360180414736411106}
+  - component: {fileID: 1927242778647847216}
+  - component: {fileID: 3929140856466467473}
+  - component: {fileID: 8355160810070811986}
+  - component: {fileID: -2866145472949974072}
+  - component: {fileID: -8073029597003325700}
+  - component: {fileID: 3612193838368839059}
   m_Layer: 0
-  m_Name: Boon_Osiris(Clone)
+  m_Name: Osiris(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &3316558708365524202
+--- !u!4 &1927242778647847216
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4944421044282605314}
+  m_GameObject: {fileID: 9173001319361320956}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
@@ -36,13 +36,13 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &8941178680454857740
+--- !u!212 &3929140856466467473
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4944421044282605314}
+  m_GameObject: {fileID: 9173001319361320956}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -76,8 +76,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 2181833891502161828, guid: 4655698daf0aca24888aa06b55b79375, type: 3}
+  m_SortingOrder: 1
+  m_Sprite: {fileID: 3875733596283371709, guid: 40765c501a6cc0e49a36a5d010209fa2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -88,17 +88,17 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &2996258242754399371
+--- !u!95 &8355160810070811986
 Animator:
   serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4944421044282605314}
+  m_GameObject: {fileID: 9173001319361320956}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 953403188148279309, guid: 4655698daf0aca24888aa06b55b79375, type: 3}
+  m_Controller: {fileID: -6740871779164873312, guid: 40765c501a6cc0e49a36a5d010209fa2, type: 3}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -109,13 +109,61 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!61 &-1109848779657049845
+--- !u!114 &-2866145472949974072
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9173001319361320956}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a39071d86c17dd4e8eb1fe66405cb97, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Osiris boon
+  Description: Revive
+  Image: {fileID: 3875733596283371709, guid: 40765c501a6cc0e49a36a5d010209fa2, type: 3}
+  healthChange: 0
+  speedChange: 0
+  manaChange: 0
+  damageChange: 0
+  shieldSize: 0
+  revive: 1
+--- !u!50 &-8073029597003325700
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9173001319361320956}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 7
+--- !u!61 &3612193838368839059
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4944421044282605314}
+  m_GameObject: {fileID: 9173001319361320956}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
@@ -138,7 +186,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0.16}
@@ -154,51 +202,3 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.2, y: 0.32}
   m_EdgeRadius: 0
---- !u!50 &-2616544391562751496
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4944421044282605314}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 7
---- !u!114 &-7360180414736411106
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4944421044282605314}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5a39071d86c17dd4e8eb1fe66405cb97, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Name: 
-  Description: 
-  Image: {fileID: 0}
-  healthChange: 0
-  speedChange: 0
-  manaChange: 0
-  damageChange: 0
-  shield: 0
-  revive: 1

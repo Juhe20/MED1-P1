@@ -41,10 +41,9 @@ public class Boon : MonoBehaviour
                 GameController.DamageChange(damageChange);
                 GameController.shieldSet(shieldSize);
                 GameController.reviveSet(revive);
-                Debug.Log(revive);
                 gameObject.SetActive(false);
                 GameController.MoveSpeed = 0;
-                
+
             }
         }
     }

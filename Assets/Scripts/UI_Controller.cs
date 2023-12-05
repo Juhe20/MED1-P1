@@ -12,6 +12,8 @@ public class UI_Controller : MonoBehaviour
     public GameObject Dialoguepanel;
     public GameObject boonDialogue;
     public GameObject Healthbar;
+    public Sprite[] characterPortrait;
+    public Image imageContainer;
     float fillhealth;
     public GameObject Manabar;
     float fillmana;
@@ -19,12 +21,16 @@ public class UI_Controller : MonoBehaviour
     private int boonSentenceIndex = 0;
     public TextMeshProUGUI tabletText;
 
-    [TextArea(3, 10)]
+    [TextArea(3, 18)]
     public string[] tabletSentences;
     public TextMeshProUGUI boonText;
 
-    [TextArea(3, 10)]
+    [TextArea(3, 18)]
     public string[] boonSentences;
+
+    [TextArea(3, 10)]
+    public string[] characterNames;
+    public TextMeshProUGUI nameText;
 
     // Update is called once per frame
     void Update()
@@ -32,8 +38,7 @@ public class UI_Controller : MonoBehaviour
         if (TabletCollision.TabletCollide)
         {
             StartTabletDialogue();
-            WaitSeconds();
-            if (Input.GetKeyDown("e"))
+            if (Input.GetKeyDown("space"))
             {
                 TabletCollision.TabletCollide = false;
                 GameController.MoveSpeed = 1;
@@ -48,11 +53,11 @@ public class UI_Controller : MonoBehaviour
         if (Boon.BoonCollision)
         {
             StartBoonDialogue();
-            WaitSeconds();
-            if (Input.GetKeyDown("e"))
+            if (Input.GetKeyDown("space"))
             {
                 Boon.BoonCollision = false;
                 GameController.MoveSpeed = 1;
+                GameController.GodDialogue = 0;
             }
         }
         else
@@ -76,6 +81,8 @@ public class UI_Controller : MonoBehaviour
     public void StartTabletDialogue()
     {
         Dialoguepanel.SetActive(true);
+        nameText.SetText(characterNames[6]);
+        imageContainer.sprite = (characterPortrait[6]);
         tabletSentenceIndex = (GameController.CollectedTablets) % tabletSentences.Length;
         tabletText.SetText(tabletSentences[tabletSentenceIndex]);
     }
@@ -83,12 +90,10 @@ public class UI_Controller : MonoBehaviour
     public void StartBoonDialogue()
     {
         boonDialogue.SetActive(true);
+        nameText.SetText(characterNames[GameController.GodDialogue]);
+        imageContainer.sprite = (characterPortrait[GameController.GodDialogue]);
         boonSentenceIndex = (Boon.BoonsCollected) % boonSentences.Length;
-        boonText.SetText(boonSentences[boonSentenceIndex]);
+        boonText.SetText(boonSentences[GameController.GodDialogue]);
     }
-    private IEnumerator WaitSeconds()
-    { 
-        yield return new WaitForSeconds(2f);
 
-    }
 }
