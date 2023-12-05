@@ -11,8 +11,8 @@ public class UI_Controller : MonoBehaviour
     public GameObject Manabar;
     float fillmana;
 
-    public GameObject Seth;
-    float Sethfill;
+    //public GameObject Seth;
+    //float Sethfill;
 
     // Update is called once per frame
     void FixedUpdate()
