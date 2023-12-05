@@ -7671,6 +7671,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: space_egypten
       objectReference: {fileID: 0}
+    - target: {fileID: 3626916397498700004, guid: 7c7cd8c3a9986fe478abc91f385622bd, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: 7c7cd8c3a9986fe478abc91f385622bd, type: 3}
       propertyPath: m_LocalScale.x
       value: 2
@@ -71884,6 +71888,7 @@ MonoBehaviour:
   AttackRange: 1.1
   Cooldown: 0.5
   enemyDamage: 1
+  attackSpeed: 1
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

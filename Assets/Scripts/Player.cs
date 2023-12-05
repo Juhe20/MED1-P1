@@ -48,7 +48,7 @@ public class Movement : MonoBehaviour
             StartCoroutine(Dash());
         }
 
-        mousePos = cam.ScreenToWorldPoint(Input.mousePosition);
+        
 
         speedLimit = GameController.MoveSpeed/moveSpeed;
         moveSpeed = GameController.MoveSpeed;
