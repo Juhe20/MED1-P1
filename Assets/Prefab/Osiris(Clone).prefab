@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: -2616544391562751496}
   - component: {fileID: -7360180414736411106}
   m_Layer: 0
-  m_Name: Boon_Osiris(Clone)
+  m_Name: Osiris(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -77,7 +77,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 2181833891502161828, guid: 4655698daf0aca24888aa06b55b79375, type: 3}
+  m_Sprite: {fileID: 3875733596283371709, guid: 40765c501a6cc0e49a36a5d010209fa2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
