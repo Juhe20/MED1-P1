@@ -10,8 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 2301803276312346972}
   - component: {fileID: -64621399882559171}
-  - component: {fileID: -2002817419842700002}
   - component: {fileID: -8462698923194746582}
+  - component: {fileID: -8524682374017627618}
   m_Layer: 0
   m_Name: StoneTabletPrefab
   m_TagString: StoneTablet
@@ -74,8 +74,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 9176699567159344189, guid: 22a029f8d7e1ac4488d55a00d041aec7, type: 3}
+  m_SortingOrder: 1
+  m_Sprite: {fileID: 2921348974554543973, guid: 22a029f8d7e1ac4488d55a00d041aec7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -86,18 +86,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &-2002817419842700002
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7068616293786323771}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b1923572c82bef4409ac0f86b3c7ea33, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &-8462698923194746582
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -143,3 +131,21 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.22, y: 0.28}
   m_EdgeRadius: 0
+--- !u!114 &-8524682374017627618
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7068616293786323771}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1923572c82bef4409ac0f86b3c7ea33, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  panel: {fileID: 0}
+  Text:
+  - 'hej det her er tablet 1 '
+  - 'det her er tablet 2 '
+  - osv.
+  - 

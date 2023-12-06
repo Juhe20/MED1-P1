@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 4655698daf0aca24888aa06b55b79375
+guid: 5932d3e85bee8804a8f37114f4dd67d8
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -78,9 +78,9 @@ ScriptedImporter:
     defaultPivotAlignment: 7
     customPivotPosition: {x: 0.5, y: 0.5}
     spritePadding: 0
-    generateModelPrefab: 1
+    generateModelPrefab: 0
     generateAnimationClips: 1
-    addSortingGroup: 1
+    addSortingGroup: 0
     addShadowCasters: 0
   asepriteImporterSettings:
     fileImportMode: 1
@@ -90,12 +90,12 @@ ScriptedImporter:
     defaultPivotAlignment: 7
     customPivotPosition: {x: 0.5, y: 0.5}
     spritePadding: 0
-    generateModelPrefab: 1
+    generateModelPrefab: 0
     generateAnimationClips: 1
-    addSortingGroup: 1
+    addSortingGroup: 0
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 0
+  platformSettingsDirtyTick: 638373809863380070
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -119,18 +119,18 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: Boon_Osiris_Frame_0
+  - name: Stairs
     originalName: 
-    pivot: {x: 0.5, y: 0}
+    pivot: {x: 0.48387095, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 20
-      height: 32
-    spriteID: 59cb1e965bb0d7d4685e1eb96ed82e56
+      width: 31
+      height: 24
+    spriteID: 052be4db02a34e0429a58ec672de94c8
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -139,138 +139,62 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 4, y: 4}
-  - name: Boon_Osiris_Frame_1
-    originalName: 
-    pivot: {x: 0.5, y: 0}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 44
-      width: 20
-      height: 32
-    spriteID: 150e6b33225c9994aa3651c31640fa92
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 4, y: 44}
-  - name: Boon_Osiris_Frame_2
-    originalName: 
-    pivot: {x: 0.5, y: 0}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 84
-      width: 20
-      height: 32
-    spriteID: feefc9f60df7a6444afad2219886ce06
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 4, y: 84}
-  - name: Boon_Osiris_Frame_3
-    originalName: 
-    pivot: {x: 0.5, y: 0}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 32
-      y: 4
-      width: 20
-      height: 32
-    spriteID: d74aa0d2e1fb45e489b4edf76e94f79e
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 32, y: 4}
-  - name: Boon_Osiris_Frame_4
-    originalName: 
-    pivot: {x: 0.42105263, y: 0}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 32
-      y: 44
-      width: 19
-      height: 24
-    spriteID: b2bf4df9890068c409967fa19b09cd75
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 32, y: 44}
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    guid: 804233292
-    name: Boon_Osiris
+    guid: -550296756
+    name: Stairs
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: Boon_Osiris_Frame_0
+    - name: Stairs
       frameIndex: 0
       cellRect:
-        x: 6
+        x: 1
         y: 0
-        width: 20
-        height: 32
-      spriteId: 59cb1e965bb0d7d4685e1eb96ed82e56
-    - name: Boon_Osiris_Frame_1
-      frameIndex: 1
-      cellRect:
-        x: 6
-        y: 0
-        width: 20
-        height: 32
-      spriteId: 150e6b33225c9994aa3651c31640fa92
-    - name: Boon_Osiris_Frame_2
-      frameIndex: 2
-      cellRect:
-        x: 6
-        y: 0
-        width: 20
-        height: 32
-      spriteId: feefc9f60df7a6444afad2219886ce06
-    - name: Boon_Osiris_Frame_3
-      frameIndex: 3
-      cellRect:
-        x: 6
-        y: 0
-        width: 20
-        height: 32
-      spriteId: d74aa0d2e1fb45e489b4edf76e94f79e
-    - name: Boon_Osiris_Frame_4
-      frameIndex: 4
-      cellRect:
-        x: 8
-        y: 0
-        width: 19
+        width: 31
         height: 24
-      spriteId: b2bf4df9890068c409967fa19b09cd75
+      spriteId: 052be4db02a34e0429a58ec672de94c8
     linkedCells: []
     parentIndex: -1
-  platformSettings: []
+  platformSettings:
+  - name: DefaultTexturePlatform
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Standalone
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Server
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
   secondarySpriteTextures: []
   spritePackingTag: 
   canvasSize: {x: 32, y: 32}

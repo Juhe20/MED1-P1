@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 9060225861014569868}
   - component: {fileID: 26399517931688017}
   - component: {fileID: 3116121206122565721}
+  - component: {fileID: -4089974825197812264}
   m_Layer: 0
   m_Name: Boon_Geb(Clone)
   m_TagString: Untagged
@@ -180,3 +181,24 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.2, y: 0.32}
   m_EdgeRadius: 0
+--- !u!114 &-4089974825197812264
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2785370452392357901}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a39071d86c17dd4e8eb1fe66405cb97, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: 
+  Description: 
+  Image: {fileID: 0}
+  healthChange: 0
+  speedChange: 0
+  manaChange: 0
+  damageChange: 0
+  shieldSize: 1
+  revive: 0

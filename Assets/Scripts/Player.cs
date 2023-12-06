@@ -75,6 +75,42 @@ public class Movement : MonoBehaviour
         rb.rotation = angle;
     }
 
+    private void OnCollisionStay2D(Collision2D collision)
+    {
+        Debug.Log(collision.gameObject.tag);
+        Debug.Log(GameController.GodDialogue);
+
+        if (collision.gameObject.CompareTag("tefnut"))
+        {
+            GameController.GodDialogue = 1;
+        }
+        else if (collision.gameObject.CompareTag("seth"))
+        {
+            GameController.GodDialogue = 2;
+        }
+        else if (collision.gameObject.CompareTag("shu"))
+        {
+            GameController.GodDialogue = 3;
+        }
+        else if (collision.gameObject.CompareTag("nut"))
+        {
+            GameController.GodDialogue = 4;
+        }
+        else if (collision.gameObject.CompareTag("geb"))
+        {
+            GameController.GodDialogue = 5;
+        }
+        else if (collision.gameObject.CompareTag("osiris"))
+        {
+            GameController.GodDialogue = 6;
+        }
+        else
+        {
+            GameController.GodDialogue = 0;
+        }
+    }
+
+
     private IEnumerator Dash()
     {
         canDash = false;
@@ -85,5 +121,6 @@ public class Movement : MonoBehaviour
 
         yield return new WaitForSeconds(dashCooldown);
         canDash = true;
+
     }
 }
