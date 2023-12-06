@@ -18,7 +18,6 @@ public class UI_Controller : MonoBehaviour
     public GameObject Manabar;
     float fillmana;
     private int tabletSentenceIndex = 0;
-    private int boonSentenceIndex = 0;
     public TextMeshProUGUI tabletText;
 
     [TextArea(3, 18)]
@@ -38,7 +37,7 @@ public class UI_Controller : MonoBehaviour
         if (TabletCollision.TabletCollide)
         {
             StartTabletDialogue();
-            if (Input.GetKeyDown("space"))
+            if (Input.GetKeyDown(KeyCode.Space))
             {
                 TabletCollision.TabletCollide = false;
                 GameController.MoveSpeed = 1;
@@ -53,7 +52,7 @@ public class UI_Controller : MonoBehaviour
         if (Boon.BoonCollision)
         {
             StartBoonDialogue();
-            if (Input.GetKeyDown("space"))
+            if (Input.GetKeyDown(KeyCode.Space))
             {
                 Boon.BoonCollision = false;
                 GameController.MoveSpeed = 1;
@@ -82,7 +81,6 @@ public class UI_Controller : MonoBehaviour
     {
         Dialoguepanel.SetActive(true);
         nameText.SetText(characterNames[6]);
-        imageContainer.sprite = (characterPortrait[6]);
         tabletSentenceIndex = (GameController.CollectedTablets) % tabletSentences.Length;
         tabletText.SetText(tabletSentences[tabletSentenceIndex]);
     }
@@ -92,7 +90,6 @@ public class UI_Controller : MonoBehaviour
         boonDialogue.SetActive(true);
         nameText.SetText(characterNames[GameController.GodDialogue]);
         imageContainer.sprite = (characterPortrait[GameController.GodDialogue]);
-        boonSentenceIndex = (Boon.BoonsCollected) % boonSentences.Length;
         boonText.SetText(boonSentences[GameController.GodDialogue]);
     }
 
