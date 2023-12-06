@@ -24,6 +24,7 @@ public class GameController : MonoBehaviour
     public static int CollectedTablets { get => collectedTablets; set => collectedTablets = value; }
     public static int Health { get => health; set => health = value; }
 
+
     public static int MaxHealth { get => maxHealth; set => maxHealth = value; }
 
     public static int Mana { get => mana; set => mana= value; }
@@ -38,7 +39,7 @@ public class GameController : MonoBehaviour
 
     public static int Shield { get => shield; set => shield = value; }
 
-    public static bool Revive { get => revive; set => revive = value; } //virker måske
+    public static bool Revive { get => revive; set => revive = value; } 
 
 
     public static void DamagePlayer(int TakeDamage)
@@ -60,6 +61,8 @@ public class GameController : MonoBehaviour
             
         }
     }
+
+
 
     public static void HealPlayer(int heal)
     {
@@ -102,4 +105,6 @@ public class GameController : MonoBehaviour
         moveSpeed = 1.0f;
         damage = 1.0f;
     }
+
+
 }
