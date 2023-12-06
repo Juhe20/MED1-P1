@@ -7920,9 +7920,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8d153612b72e38458774b8a77993118, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Dialoguepanel: {fileID: 0}
+  boonDialogue: {fileID: 0}
   Healthbar: {fileID: 1714380830}
+  characterPortrait: []
+  imageContainer: {fileID: 0}
   Manabar: {fileID: 911851397}
-  Seth: {fileID: 0}
+  tabletText: {fileID: 0}
+  tabletSentences: []
+  boonText: {fileID: 0}
+  boonSentences: []
+  characterNames: []
+  nameText: {fileID: 0}
 --- !u!1001 &840217659
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -60310,7 +60319,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4741061804859499608, guid: b0260e2f8fcaff44ea5e07b319d72093, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -11.413007
+      value: -11.03
       objectReference: {fileID: 0}
     - target: {fileID: 4741061804859499608, guid: b0260e2f8fcaff44ea5e07b319d72093, type: 3}
       propertyPath: m_LocalPosition.z
