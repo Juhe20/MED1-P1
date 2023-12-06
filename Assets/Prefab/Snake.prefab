@@ -11,11 +11,10 @@ GameObject:
   - component: {fileID: 2319354665601470595}
   - component: {fileID: 5217508674414083536}
   - component: {fileID: -11670954250467017}
-  - component: {fileID: 5687495629391385428}
   - component: {fileID: 6122066746145088087}
-  - component: {fileID: -2029259606370815263}
+  - component: {fileID: 8245839417486217699}
   m_Layer: 0
-  m_Name: RAt
+  m_Name: Snake
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -76,9 +75,9 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.05098039, g: 0.58668596, b: 1, a: 1}
+  m_Color: {r: 0.1449125, g: 1, b: 0.05098039, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -101,57 +100,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 5568834969184388673, guid: d8b2f3e818664fe499112656b028b194, type: 3}
-  speed: 1
+  speed: 4
   distanceBetween: 6
   AttackRange: 1.1
-  Cooldown: 0
+  Cooldown: 0.5
   enemyDamage: 2
   attackSpeed: 1
---- !u!61 &5687495629391385428
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 206515866427689505}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
 --- !u!50 &6122066746145088087
 Rigidbody2D:
   serializedVersion: 4
@@ -160,11 +114,11 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 206515866427689505}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 100
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 0
@@ -178,8 +132,8 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
---- !u!114 &-2029259606370815263
+  m_Constraints: 4
+--- !u!114 &8245839417486217699
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -191,5 +145,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67122cca2b47c01449ed2430d3c5195e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyhealth: 0
+  enemyhealth: 1
   maxenemyhealth: 1

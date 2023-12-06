@@ -11,8 +11,6 @@ public class Boss : MonoBehaviour
     public GameObject bulletPrefab;
     public GameObject bulletParent;
     
-    public float BossHealth = 200;
-    public float BossMax = 200;
     public float bossSpeed = 2.5f;
     public float meleeRange = 1.3f;
     public float rangedAttackRange = 5.3f;
