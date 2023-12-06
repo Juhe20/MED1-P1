@@ -189,8 +189,7 @@ MonoBehaviour:
   meleePoint: {fileID: 4561287562268678457}
   magicPrefab: {fileID: 486863206543092467, guid: 7a008d30895c27f468bda944e1f7984a, type: 3}
   MeleePrefab: {fileID: 7562638323481482922}
-  health: 0
-  maxHealth: 100
+
 --- !u!114 &1423226891761897856
 MonoBehaviour:
   m_ObjectHideFlags: 0
