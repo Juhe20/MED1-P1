@@ -31,6 +31,9 @@ public class UI_Controller : MonoBehaviour
     public string[] characterNames;
     public TextMeshProUGUI nameText;
 
+    //public GameObject Seth;
+    //float Sethfill;
+
     // Update is called once per frame
     void Update()
     {
@@ -73,6 +76,7 @@ public class UI_Controller : MonoBehaviour
         fillmana = (float)GameController.Mana;
         fillmana = fillmana / GameController.MaxMana;
         Manabar.GetComponent<Image>().fillAmount = fillmana;
+
 
     }
 

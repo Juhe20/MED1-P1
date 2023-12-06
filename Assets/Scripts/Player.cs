@@ -12,8 +12,15 @@ public class Movement : MonoBehaviour
     public float speedLimit = GameController.MoveSpeed*0.5f;
     public float moveSpeed;
 
-    Vector2 mousePos;
-    Vector2 mouseDis;
+    Vector2 mousePosition;
+    Vector2 moveDirection;
+
+    [SerializeField] float dashSpeed = 20f;
+    [SerializeField] float dashDuration = .1f;
+    [SerializeField] float dashCooldown = 5f;
+
+    bool isDashing;
+    bool canDash;
 
     //Camera is referenced to track mouse position in void update
     public Camera cam;
@@ -21,22 +28,40 @@ public class Movement : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+
+        canDash = true;
     }
 
     
     void Update()
     {
+
         horizontal = Input.GetAxisRaw("Horizontal");
         vertical = Input.GetAxisRaw("Vertical");
 
-        mousePos = cam.ScreenToWorldPoint(Input.mousePosition);
+
+        moveDirection = new Vector2(horizontal, vertical).normalized;
+        mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+
+        if (Input.GetButtonDown("Dash") && canDash)
+        {
+            StartCoroutine(Dash());
+        }
+
+        
 
         speedLimit = GameController.MoveSpeed/moveSpeed;
         moveSpeed = GameController.MoveSpeed;
+
     }
 
     private void FixedUpdate()
     {
+        if (isDashing)
+        {
+            return;
+        }
+
         if (horizontal !=0 && vertical !=0)
         {
             horizontal *= speedLimit;
@@ -45,7 +70,7 @@ public class Movement : MonoBehaviour
 
         rb.velocity = new Vector2(horizontal * moveSpeed, vertical * moveSpeed);
 
-        Vector2 lookDir = mousePos - rb.position;
+        Vector2 lookDir = mousePosition - rb.position;
         float angle = Mathf.Atan2(lookDir.y, lookDir.x) * Mathf.Rad2Deg -90f;
         rb.rotation = angle;
     }
@@ -55,34 +80,47 @@ public class Movement : MonoBehaviour
         Debug.Log(collision.gameObject.tag);
         Debug.Log(GameController.GodDialogue);
 
-            if (collision.gameObject.CompareTag("tefnut"))
+        if (collision.gameObject.CompareTag("tefnut"))
         {
-                GameController.GodDialogue = 1;
-            }
-            else if (collision.gameObject.CompareTag("seth"))
+            GameController.GodDialogue = 1;
+        }
+        else if (collision.gameObject.CompareTag("seth"))
         {
-                GameController.GodDialogue = 2;
-            }
-            else if (collision.gameObject.CompareTag("shu"))
-            {
-                GameController.GodDialogue = 3;
-            }
-            else if (collision.gameObject.CompareTag("nut"))
-            {
-                GameController.GodDialogue = 4;
-            }
-            else if (collision.gameObject.CompareTag("geb"))
+            GameController.GodDialogue = 2;
+        }
+        else if (collision.gameObject.CompareTag("shu"))
         {
-                GameController.GodDialogue = 5;
-            }
-            else if (collision.gameObject.CompareTag("osiris"))
+            GameController.GodDialogue = 3;
+        }
+        else if (collision.gameObject.CompareTag("nut"))
         {
-                GameController.GodDialogue = 6;
-            }
-            else
-            {
-                GameController.GodDialogue = 0;
-            }
+            GameController.GodDialogue = 4;
+        }
+        else if (collision.gameObject.CompareTag("geb"))
+        {
+            GameController.GodDialogue = 5;
+        }
+        else if (collision.gameObject.CompareTag("osiris"))
+        {
+            GameController.GodDialogue = 6;
+        }
+        else
+        {
+            GameController.GodDialogue = 0;
+        }
+    }
+
+
+    private IEnumerator Dash()
+    {
+        canDash = false;
+        isDashing = true;
+        rb.velocity = new Vector2(moveDirection.x * dashSpeed, moveDirection.y * dashSpeed);
+        yield return new WaitForSeconds(dashDuration);
+        isDashing = false;
+
+        yield return new WaitForSeconds(dashCooldown);
+        canDash = true;
 
     }
 }
