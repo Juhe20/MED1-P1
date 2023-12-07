@@ -24,6 +24,7 @@ public class Movement : MonoBehaviour
 
     //Camera is referenced to track mouse position in void update
     public Camera cam;
+    public Transform child;
 
     void Start()
     {
@@ -35,6 +36,7 @@ public class Movement : MonoBehaviour
     
     void Update()
     {
+        child.transform.rotation = Quaternion.Euler(0.0f, 0.0f, gameObject.transform.rotation.z * -1.0f);
 
         horizontal = Input.GetAxisRaw("Horizontal");
         vertical = Input.GetAxisRaw("Vertical");
