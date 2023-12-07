@@ -9158,98 +9158,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8d153612b72e38458774b8a77993118, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Dialoguepanel: {fileID: 1195455552}
-  boonDialogue: {fileID: 2008482360}
+  Dialoguepanel: {fileID: 0}
+  boonDialogue: {fileID: 0}
   Healthbar: {fileID: 1714380830}
-  characterPortrait:
-  - {fileID: -1917874862520843472, guid: 0259ed440d2f20448b137ef2edbf7842, type: 3}
-  - {fileID: 5826914991406456751, guid: da60b5ad14fbc3a43ac271fca2fc28cb, type: 3}
-  - {fileID: 7828178406917754747, guid: d03c47b8164a2e546a34d2b299945895, type: 3}
-  - {fileID: 5826914991406456751, guid: da60b5ad14fbc3a43ac271fca2fc28cb, type: 3}
-  - {fileID: -879805093616420381, guid: 753447be6ca89134587db17ed2330498, type: 3}
-  - {fileID: -4192395596996333596, guid: 10a1abe489ff55844b066d2c78cc239e, type: 3}
-  - {fileID: -1917874862520843472, guid: 0259ed440d2f20448b137ef2edbf7842, type: 3}
-  imageContainer: {fileID: 1077515268}
+  characterPortrait: []
+  imageContainer: {fileID: 0}
   Manabar: {fileID: 911851397}
-  tabletText: {fileID: 77911984}
-  tabletSentences:
-  - sumtin wong
-  - "Well Well Well! If it isn\u2019t my Son Horus before me? You have found one
-    of my stone tablets.\nWell then, as you know, I am the God Osiris, ruler of Egypt!
-    Or rather, that was before my own brother Seth killed me! Now I am known as the
-    ruler of afterlife and fertility.\nOh that sly brother of mine. Find more of
-    my tablets to hear more about how he did it.\n"
-  - My my! Another tablet! Good job! The story goes like this, my brother Seth decided
-    to host a party in my honor for all of the big gods, deities and the Enneads
-    to attend. Here, the main attraction was a coffin Seth had found, and set up
-    to fit my exact measurements, so that only I would be able to fit inside of it.
-    He tricked me, as he told all the gods and deities, that whoever could fit in
-    it would receive it as a gift. So when it became my turn to enter the coffin,
-    I fit in perfectly! Seth shut it close, chained and locked it shut and threw
-    me in the Nile.
-  - "Wow, you are on a roll! We left off where I was thrown in the Nile. Yes! Well,
-    my wife Isis got awfully furious after that little incident, turning into a hawk
-    trying to look for me. She did find me, not to worry, but.. by the time she did
-    I had died on that little coffin trip. But as my wife retrieved me from the coffin,
-    she hid my body away while she went looking for a way to bring me back to life.
-    While she was away however\u2026 Who was to find me but my conniving brother
-    Seth? And well.. he chopped me into a bunch of little pieces he did!"
-  - "Almost all of my tablets, good job! Where were we? Ah yes! While she was away
-    however\u2026 Who was to find me but my conniving brother Seth? And well.. he
-    chopped me into a bunch of little pieces he did! Seth had just cut up my body
-    and then he spread them all across Egypt. However, my wife Isis and Seth' wife,
-    Nephthys, looked for my scattered body parts and found them so that I could be
-    resurrected only for a while, long enough to make my wife pregnant with you. "
-  - "You've found all my tablets, impressive.\nSoo, since I was dead, again, and
-    couldn't stay alive, I became lord of the underworld, and my brother became king.
-    My son, Horus, you will now have to fight Seth for the throne. I know the Enneads
-    thinks that you are too young, but you will have to prove yourself over your
-    uncle\u2026 Good luck my son!\n"
-  boonText: {fileID: 210460067}
-  boonSentences:
-  - Sumtin wong
-  - 'Long test of dialogue to see how it works
-
-    With spaces and long text 1'
-  - 'Long test of dialogue
-
-    See how it works
-
-    With spaces 2'
-  - 'Long test of dialogue
-
-    See how it works
-
-    With spaces 3'
-  - 'Long test of dialogue
-
-    See how it works
-
-    With spaces 4'
-  - 'Long test of dialogue
-
-    See how it works
-
-    With spaces 5'
-  - 'Long test of dialogue
-
-    See how it works
-
-    With spaces 6'
-  - 'Long test of dialogue
-
-    See how it works
-
-    With spaces 7'
-  characterNames:
-  - empty
-  - Tefnut
-  - Seth
-  - Shu
-  - Nut
-  - "Geb\t"
-  - Osiris
-  nameText: {fileID: 828600622}
+  tabletText: {fileID: 0}
+  tabletSentences: []
+  boonText: {fileID: 0}
+  boonSentences: []
+  characterNames: []
+  nameText: {fileID: 0}
 --- !u!1 &828600621
 GameObject:
   m_ObjectHideFlags: 0
