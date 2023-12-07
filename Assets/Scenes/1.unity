@@ -9208,39 +9208,12 @@ MonoBehaviour:
   boonText: {fileID: 210460067}
   boonSentences:
   - Sumtin wong
-  - 'Long test of dialogue to see how it works
-
-    With spaces and long text 1'
-  - 'Long test of dialogue
-
-    See how it works
-
-    With spaces 2'
-  - 'Long test of dialogue
-
-    See how it works
-
-    With spaces 3'
-  - 'Long test of dialogue
-
-    See how it works
-
-    With spaces 4'
-  - 'Long test of dialogue
-
-    See how it works
-
-    With spaces 5'
-  - 'Long test of dialogue
-
-    See how it works
-
-    With spaces 6'
-  - 'Long test of dialogue
-
-    See how it works
-
-    With spaces 7'
+  - I am Tefnut, the deity of moisture! You have found my boon.
+  - I am Seth, the God of chaos. You have found my boon.
+  - I am Shu, the God of air. You have found my boon.
+  - I am Nut, the Godess of the sky. You have found my boon.
+  - I am Geb, the God of the earth. You have found my boon.
+  - I am Osiris, the God of the deceased. You have found my boon.
   characterNames:
   - empty
   - Tefnut
