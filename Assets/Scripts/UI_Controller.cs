@@ -58,8 +58,8 @@ public class UI_Controller : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.Space))
             {
                 Boon.BoonCollision = false;
-                GameController.MoveSpeed = 1;
                 GameController.GodDialogue = 0;
+                Time.timeScale = 1;
             }
         }
         else
