@@ -473,8 +473,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 145, y: 195.03}
-  m_SizeDelta: {x: 500, y: 50}
+  m_AnchoredPosition: {x: 200, y: 50}
+  m_SizeDelta: {x: 700, y: 600}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!1 &203130799
 GameObject:
@@ -9174,10 +9174,37 @@ MonoBehaviour:
   tabletText: {fileID: 77911984}
   tabletSentences:
   - sumtin wong
-  - TabletTest1
-  - TabletTest2
-  - TabletTest2
-  - TabletTest2
+  - "Well Well Well! If it isn\u2019t my Son Horus before me? You have found one
+    of my stone tablets.\nWell then, as you know, I am the God Osiris, ruler of Egypt!
+    Or rather, that was before my own brother Seth killed me! Now I am known as the
+    ruler of afterlife and fertility.\nOh that sly brother of mine. Find more of
+    my tablets to hear more about how he did it.\n"
+  - My my! Another tablet! Good job! The story goes like this, my brother Seth decided
+    to host a party in my honor for all of the big gods, deities and the Enneads
+    to attend. Here, the main attraction was a coffin Seth had found, and set up
+    to fit my exact measurements, so that only I would be able to fit inside of it.
+    He tricked me, as he told all the gods and deities, that whoever could fit in
+    it would receive it as a gift. So when it became my turn to enter the coffin,
+    I fit in perfectly! Seth shut it close, chained and locked it shut and threw
+    me in the Nile.
+  - "Wow, you are on a roll! We left off where I was thrown in the Nile. Yes! Well,
+    my wife Isis got awfully furious after that little incident, turning into a hawk
+    trying to look for me. She did find me, not to worry, but.. by the time she did
+    I had died on that little coffin trip. But as my wife retrieved me from the coffin,
+    she hid my body away while she went looking for a way to bring me back to life.
+    While she was away however\u2026 Who was to find me but my conniving brother
+    Seth? And well.. he chopped me into a bunch of little pieces he did!"
+  - "Almost all of my tablets, good job! Where were we? Ah yes! While she was away
+    however\u2026 Who was to find me but my conniving brother Seth? And well.. he
+    chopped me into a bunch of little pieces he did! Seth had just cut up my body
+    and then he spread them all across Egypt. However, my wife Isis and Seth' wife,
+    Nephthys, looked for my scattered body parts and found them so that I could be
+    resurrected only for a while, long enough to make my wife pregnant with you. "
+  - "You've found all my tablets, impressive.\nSoo, since I was dead, again, and
+    couldn't stay alive, I became lord of the underworld, and my brother became king.
+    My son, Horus, you will now have to fight Seth for the throne. I know the Enneads
+    thinks that you are too young, but you will have to prove yourself over your
+    uncle\u2026 Good luck my son!\n"
   boonText: {fileID: 210460067}
   boonSentences:
   - Sumtin wong
@@ -9283,7 +9310,7 @@ MonoBehaviour:
   m_spriteAsset: {fileID: 0}
   m_tintAllSprites: 0
   m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: 0
+  m_TextStyleHashCode: -1183493901
   m_overrideHtmlColors: 0
   m_faceColor:
     serializedVersion: 2
@@ -9659,8 +9686,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: -294.7, y: 39.42}
-  m_SizeDelta: {x: 225, y: 535}
+  m_AnchoredPosition: {x: -390, y: 100}
+  m_SizeDelta: {x: 500, y: 1200}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &1010179761
 MonoBehaviour:
@@ -10118,7 +10145,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 898, y: 462}
+  m_SizeDelta: {x: 1200, y: 1200}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &1195455554
 MonoBehaviour:
@@ -73719,7 +73746,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 11.899994, y: -11.299988}
+  m_AnchoredPosition: {x: 11.900024, y: -11.299988}
   m_SizeDelta: {x: 400, y: 50}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1978309249
