@@ -14,11 +14,11 @@ public class Magic : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        Destroy(gameObject);
+        float danmage = GameController.Damage;
 
         if (collision.gameObject.CompareTag("Enemy"))
         {
-            Destroy(collision.gameObject);
+            collision.gameObject.GetComponent<EnemyController>().DamageEnemy(danmage+2);
         }
     }
 }
