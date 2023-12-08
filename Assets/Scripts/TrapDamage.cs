@@ -1,6 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class TrapDamage : MonoBehaviour
@@ -17,8 +15,10 @@ public class TrapDamage : MonoBehaviour
 
     private void Awake()
     {
-       anim = GetComponent<Animator>();
+        anim = GetComponent<Animator>();
         spriteRend = GetComponent<SpriteRenderer>();
+
+        anim.enabled = false;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -30,9 +30,14 @@ public class TrapDamage : MonoBehaviour
                 StartCoroutine(ActivateTrap());
             }
             if (active)
+            {
+                anim.enabled = true;
                 GameController.DamagePlayer(1);
+                StartCoroutine(Cooldown());
+                anim.StopPlayback();
+            }
+        }
     }
-}
     private IEnumerator ActivateTrap()
     {
         triggered = true;
@@ -46,4 +51,9 @@ public class TrapDamage : MonoBehaviour
         //om spike trap hedder activated når den stikker dig eller et andet navn
         //anim.SetBool("activated", false);
     }
-           }
+
+    private IEnumerator Cooldown()
+    {
+        yield return new WaitForSeconds(activationDelay);
+    }
+}
