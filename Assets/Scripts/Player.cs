@@ -104,10 +104,7 @@ public class Movement : MonoBehaviour
         {
             GameController.GodDialogue = 6;
         }
-        else
-        {
-            GameController.GodDialogue = 0;
-        }
+
     }
 
 

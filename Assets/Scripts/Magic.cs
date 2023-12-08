@@ -15,6 +15,7 @@ public class Magic : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         float danmage = GameController.Damage;
+        Destroy(gameObject);
 
         if (collision.gameObject.CompareTag("Enemy"))
         {
