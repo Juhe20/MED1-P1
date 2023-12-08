@@ -37,6 +37,9 @@ public class Movement : MonoBehaviour
         body.GetComponent<Animator>().GetBool("NotMoveing");
         body.GetComponent<Animator>().SetBool("NotMoveing", false);
 
+        body.GetComponent<Animator>().SetBool("Attacking", false);
+
+
     }
 
     
