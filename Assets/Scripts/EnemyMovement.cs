@@ -21,6 +21,7 @@ public class EnemyMovement : MonoBehaviour
 
     [SerializeField] private float attackSpeed = 1f;
 
+    [SerializeField] private AudioSource PlayerDamage;
     private void Start()
     {
         GetComponent<Animator>().GetFloat("MoveX");
@@ -86,6 +87,7 @@ public class EnemyMovement : MonoBehaviour
         {
             if (attackSpeed >= canAttack)
             {
+
                 GameController.DamagePlayer(1);
                 Debug.Log(GameController.Health);
                 canAttack = 0f;
@@ -101,6 +103,7 @@ public class EnemyMovement : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))
+
         {
             target = transform;
         }
@@ -110,6 +113,8 @@ public class EnemyMovement : MonoBehaviour
     {
         if (!Hit)
         {
+            PlayerDamage.Play();
+
             GameController.DamagePlayer(1);
             StartCoroutine(CoolDown());
         }
