@@ -17,6 +17,7 @@ public class Magic : MonoBehaviour
 
         Destroy(gameObject);
         float danmage = GameController.Damage;
+        Destroy(gameObject);
 
         if (collision.gameObject.CompareTag("Enemy"))
         {
