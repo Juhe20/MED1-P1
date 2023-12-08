@@ -21,8 +21,13 @@ public class EnemyMovement : MonoBehaviour
 
     [SerializeField] private float attackSpeed = 1f;
 
+    private void Start()
+    {
+        GetComponent<Animator>().GetFloat("MoveX");
+        GetComponent<Animator>().GetFloat("MoveY");
+        GetComponent<SpriteRenderer>();
+    }
 
-    
     void FixedUpdate()
     {
         //Måler længden mellem enemy og player
@@ -30,15 +35,43 @@ public class EnemyMovement : MonoBehaviour
         Vector2 direction = player.transform.position - transform.position;
         direction.Normalize();
         //Til at rotere enemy, Atan2 bruges til at finde vinkel mellem to punkter
-        float angle = Mathf.Atan2(direction.y,direction.x)*Mathf.Rad2Deg;
-
+        
+        
 
         if (distance < distanceBetween)
         {
             //Får enemy til at bevæge sig
             transform.position =
                 Vector2.MoveTowards(this.transform.position, player.transform.position, speed * Time.deltaTime);
-            transform.rotation = Quaternion.Euler(Vector3.forward * angle);
+
+            if (this.transform.position.x - player.transform.position.x > 0.5)
+            {
+                GetComponent<Animator>().SetFloat("MoveX", 1);
+                GetComponent<Animator>().SetFloat("MoveY", 0);
+            }
+
+
+            if (this.transform.position.x - player.transform.position.x < -0.5)
+            {
+                GetComponent<Animator>().SetFloat("MoveX", -1);
+                GetComponent<Animator>().SetFloat("MoveY", 0);
+            }
+
+
+            if (this.transform.position.y - player.transform.position.y > 0.5)
+            {
+                GetComponent<Animator>().SetFloat("MoveX", 0);
+                GetComponent<Animator>().SetFloat("MoveY", 1);
+            }
+
+            if (this.transform.position.y - player.transform.position.y < -0.5)
+            {
+                GetComponent<Animator>().SetFloat("MoveX", 0);
+                GetComponent<Animator>().SetFloat("MoveY", -1);
+            }
+
+
+
         }
 
         if (Vector3.Distance(transform.position, player.transform.position) <= AttackRange)
