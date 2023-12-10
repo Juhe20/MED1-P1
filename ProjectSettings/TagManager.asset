@@ -14,6 +14,7 @@ TagManager:
   - geb
   - osiris
   - seth
+  - stair
   layers:
   - Default
   - TransparentFX

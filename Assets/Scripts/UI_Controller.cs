@@ -1,14 +1,14 @@
-using System.Collections;
-using System.Collections.Generic;
 using TMPro;
-using Unity.Burst.CompilerServices;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
 
 public class UI_Controller : MonoBehaviour
 {
+    public GameObject tabletsCollectedWindow;
+    public TextMeshProUGUI tabletsCollectedText;
+    private static int inDialogue = 0;
+    public static int InDialogue { get => inDialogue; set => inDialogue = value; }
     public GameObject Dialoguepanel;
     public GameObject boonDialogue;
     public GameObject Healthbar;
@@ -37,6 +37,9 @@ public class UI_Controller : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+
+
         if (TabletCollision.TabletCollide)
         {
             StartTabletDialogue();
@@ -44,6 +47,7 @@ public class UI_Controller : MonoBehaviour
             {
                 TabletCollision.TabletCollide = false;
                 GameController.MoveSpeed = 1;
+                Time.timeScale = 1;
             }
         }
         else
@@ -66,6 +70,45 @@ public class UI_Controller : MonoBehaviour
         {
             boonDialogue.SetActive(false);
         }
+
+        Debug.Log(inDialogue);
+        if (NextLevel.NextScene == 1)
+        {
+            if (inDialogue == 5 || InDialogue == 2 && GameController.CurrentlyCollectedTablets == 0)
+            {
+                tabletsCollectedWindow.SetActive(true);
+                tabletsCollectedText.SetText("I found the door to Seth's chamber." +
+                    System.Environment.NewLine + "I have only collected" + " " + GameController.CurrentlyCollectedTablets + " " + "out of 2 of my father's stone tablets." +
+                    System.Environment.NewLine + "I should consider finding the rest before heading into the final battle.");
+            }
+
+        }
+        else if (NextLevel.NextScene == 0)
+        {
+            if (inDialogue == 1)
+            {
+                tabletsCollectedWindow.SetActive(true);
+                tabletsCollectedText.SetText("I found the stairs to the next level." +
+                    System.Environment.NewLine + "I have only collected" + " " + GameController.CollectedTablets + " " + "out of 2 of my father's stone tablets." +
+                    System.Environment.NewLine + "I should consider finding the rest before going up the stairs.");
+            }
+
+        }
+        else
+        {
+            tabletsCollectedWindow.SetActive(false);
+        }
+        if (tabletsCollectedWindow.activeInHierarchy)
+        {
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                tabletsCollectedWindow.SetActive(false);
+                inDialogue = 3;
+            }
+        }
+
+
+
 
         //Health UI update
         fillhealth = (float)GameController.Health;
