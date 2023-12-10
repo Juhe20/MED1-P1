@@ -18,9 +18,10 @@ public class GameController : MonoBehaviour
     private static int shield = 0;
     private static bool revive = false;
     private static int collectedTablets = 0;
+    private static int currentlyCollectedTablets;
     private static int godDialogue;
     public static int GodDialogue { get => godDialogue; set => godDialogue = value; }
-
+    public static int CurrentlyCollectedTablets { get => currentlyCollectedTablets; set => currentlyCollectedTablets = value; }
     public static int CollectedTablets { get => collectedTablets; set => collectedTablets = value; }
     public static int Health { get => health; set => health = value; }
 

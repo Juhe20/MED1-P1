@@ -1,9 +1,5 @@
-using System.Collections;
-using System.Collections.Generic;
-using System.Security.Cryptography;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.UIElements;
 
 public class Staircase : MonoBehaviour
 {
@@ -11,24 +7,16 @@ public class Staircase : MonoBehaviour
     public GameObject Stair;
     public Vector2[] spawnPoints;
     int randomSpawnPoint;
+    private static GameObject spawnedStairPosition;
+    public static GameObject SpawnedStairPosition { get => spawnedStairPosition; set => spawnedStairPosition = value; }
     int i = 0;
 
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-
-        if (collision.gameObject.CompareTag("Player"))
-        {
-            nextScene++;
-            SceneManager.LoadScene(nextScene);
-        }
-
-    }
 
     private void Update()
     {
 
         StairCaseSpawner();
-        
+
     }
 
     void StairCaseSpawner()
@@ -36,7 +24,7 @@ public class Staircase : MonoBehaviour
         randomSpawnPoint = Random.Range(0, spawnPoints.Length);
         while (i < 1)
         {
-            Instantiate(Stair, spawnPoints[randomSpawnPoint], Quaternion.identity);
+            spawnedStairPosition = Instantiate(Stair, spawnPoints[randomSpawnPoint], Quaternion.identity);
             i++;
         }
     }

@@ -11,10 +11,11 @@ public class TabletCollision : MonoBehaviour
             if (Input.GetKey("e"))
             {
                 GameController.CollectedTablets++;
+                GameController.CurrentlyCollectedTablets++;
                 GameController.Mana++;
                 TabletCollide = true;
                 gameObject.SetActive(false);
-                GameController.MoveSpeed = 0;
+                Time.timeScale = 0;
             }
 
         }
