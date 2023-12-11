@@ -75162,6 +75162,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 2028200571350472667, guid: d8b2f3e818664fe499112656b028b194, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 2568939560617225158, guid: d8b2f3e818664fe499112656b028b194, type: 3}
       propertyPath: cam
       value: 
@@ -76106,6 +76110,52 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 2028200571350472667, guid: d8b2f3e818664fe499112656b028b194, type: 3}
   m_PrefabInstance: {fileID: 648146581}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1693032914
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1693032916}
+  - component: {fileID: 1693032915}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1693032915
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1693032914}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5985eaf032c94742bc6db4266489046, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemy: {fileID: 5329120757304063522, guid: bb77404131c75a94794f765d1f1dff58, type: 3}
+  spawnTimer: 3.5
+--- !u!4 &1693032916
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1693032914}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.54, y: 31.19, z: -0.033269748}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1725385835
 GameObject:
   m_ObjectHideFlags: 0
@@ -76264,8 +76314,30 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 206515866427689505, guid: c1909b166b99980499d09741e9f3e95c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1779946459}
   m_SourcePrefab: {fileID: 100100000, guid: c1909b166b99980499d09741e9f3e95c, type: 3}
+--- !u!1 &1779946458 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 206515866427689505, guid: c1909b166b99980499d09741e9f3e95c, type: 3}
+  m_PrefabInstance: {fileID: 1779946457}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1779946459
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1779946458}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5985eaf032c94742bc6db4266489046, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemy: {fileID: 0}
+  spawnTimer: 3.5
 --- !u!1 &1799316955
 GameObject:
   m_ObjectHideFlags: 0
@@ -83932,3 +84004,4 @@ SceneRoots:
   - {fileID: 1799316960}
   - {fileID: 648146581}
   - {fileID: 1779946457}
+  - {fileID: 1693032916}
