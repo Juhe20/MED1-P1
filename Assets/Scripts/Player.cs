@@ -1,15 +1,14 @@
-using System;
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Movement : MonoBehaviour
 {
-    private Rigidbody2D rb; 
+    public GameObject body;
+    private Rigidbody2D rb;
     float vertical;
     float horizontal;
 
-    public float speedLimit = GameController.MoveSpeed*0.5f;
+    public float speedLimit = GameController.MoveSpeed * 0.5f;
     public float moveSpeed;
 
     Vector2 mousePosition;
@@ -26,14 +25,22 @@ public class Movement : MonoBehaviour
     public Camera cam;
     public Transform child;
 
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-
         canDash = true;
+        body.GetComponent<Animator>().GetFloat("MoveX");
+        body.GetComponent<Animator>().GetFloat("MoveY");
+        body.GetComponent<Animator>().GetBool("NotMoveing");
+        body.GetComponent<Animator>().SetBool("NotMoveing", false);
+
+        body.GetComponent<Animator>().SetBool("Attacking", false);
+
+
     }
 
-    
+
     void Update()
     {
         child.transform.rotation = Quaternion.Euler(0.0f, 0.0f, gameObject.transform.rotation.z * -1.0f);
@@ -50,9 +57,9 @@ public class Movement : MonoBehaviour
             StartCoroutine(Dash());
         }
 
-        
 
-        speedLimit = GameController.MoveSpeed/moveSpeed;
+
+        speedLimit = GameController.MoveSpeed / moveSpeed;
         moveSpeed = GameController.MoveSpeed;
 
     }
@@ -64,7 +71,7 @@ public class Movement : MonoBehaviour
             return;
         }
 
-        if (horizontal !=0 && vertical !=0)
+        if (horizontal != 0 && vertical != 0)
         {
             horizontal *= speedLimit;
             vertical *= speedLimit;
@@ -73,14 +80,48 @@ public class Movement : MonoBehaviour
         rb.velocity = new Vector2(horizontal * moveSpeed, vertical * moveSpeed);
 
         Vector2 lookDir = mousePosition - rb.position;
-        float angle = Mathf.Atan2(lookDir.y, lookDir.x) * Mathf.Rad2Deg -90f;
+        float angle = Mathf.Atan2(lookDir.y, lookDir.x) * Mathf.Rad2Deg - 90f;
         rb.rotation = angle;
+
+        if (horizontal > 0)
+        {
+            body.GetComponent<Animator>().SetFloat("MoveX", 1);
+            body.GetComponent<Animator>().SetFloat("MoveY", 0);
+            body.GetComponent<Animator>().SetBool("NotMoveing", false);
+        }
+
+        if (horizontal < 0)
+        {
+            body.GetComponent<Animator>().SetFloat("MoveX", -1);
+            body.GetComponent<Animator>().SetFloat("MoveY", 0);
+            body.GetComponent<Animator>().SetBool("NotMoveing", false);
+        }
+
+        if (vertical > 0)
+        {
+            body.GetComponent<Animator>().SetFloat("MoveY", 1);
+            body.GetComponent<Animator>().SetFloat("MoveX", 0);
+            body.GetComponent<Animator>().SetBool("NotMoveing", false);
+        }
+
+        if (vertical < 0)
+        {
+            body.GetComponent<Animator>().SetFloat("MoveY", -1);
+            body.GetComponent<Animator>().SetFloat("MoveX", 0);
+            body.GetComponent<Animator>().SetBool("NotMoveing", false);
+        }
+        if (horizontal == 0 && vertical == 0)
+        {
+            body.GetComponent<Animator>().SetFloat("MoveY", 0);
+            body.GetComponent<Animator>().SetFloat("MoveX", 0);
+            body.GetComponent<Animator>().SetBool("NotMoveing", true);
+        }
+
     }
 
     private void OnCollisionStay2D(Collision2D collision)
     {
-        Debug.Log(collision.gameObject.tag);
-        Debug.Log(GameController.GodDialogue);
+
 
         if (collision.gameObject.CompareTag("tefnut"))
         {
@@ -106,14 +147,23 @@ public class Movement : MonoBehaviour
         {
             GameController.GodDialogue = 6;
         }
-        else
+
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("stair"))
         {
-            GameController.GodDialogue = 0;
+            if (GameController.CurrentlyCollectedTablets < 2)
+            {
+                UI_Controller.InDialogue++;
+            }
+
         }
     }
 
 
-    private IEnumerator Dash()
+        private IEnumerator Dash()
     {
         canDash = false;
         isDashing = true;
