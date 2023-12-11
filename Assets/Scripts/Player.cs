@@ -17,6 +17,7 @@ public class Movement : MonoBehaviour
     [SerializeField] float dashSpeed = 20f;
     [SerializeField] float dashDuration = .1f;
     [SerializeField] float dashCooldown = 5f;
+    [SerializeField] private AudioSource DashSoundEffect;
 
     bool isDashing;
     bool canDash;
@@ -54,6 +55,7 @@ public class Movement : MonoBehaviour
 
         if (Input.GetButtonDown("Dash") && canDash)
         {
+            DashSoundEffect.Play();
             StartCoroutine(Dash());
         }
 

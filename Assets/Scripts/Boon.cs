@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class Boon : MonoBehaviour
 {
+    [SerializeField] private AudioSource Speaking;
     public string Name;
     public string Description;
     public Sprite Image;
@@ -43,6 +44,7 @@ public class Boon : MonoBehaviour
                 GameController.reviveSet(revive);
                 gameObject.SetActive(false);
                 Time.timeScale = 0;
+                Speaking.Play();
 
             }
         }

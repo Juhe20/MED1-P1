@@ -100,7 +100,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3cce2a4b28be7714fb387f157ab37743, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  EnemyDamage: {fileID: 3319098456560315302}
+  Bullet: {fileID: 3319098456560315302}
   speed: 1
 --- !u!70 &6519736559125064765
 CapsuleCollider2D:
@@ -175,7 +175,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: ffb159a21c8a04135a5616979c828fab, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
