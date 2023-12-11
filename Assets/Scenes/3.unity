@@ -76141,6 +76141,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemy: {fileID: 5329120757304063522, guid: bb77404131c75a94794f765d1f1dff58, type: 3}
   spawnTimer: 3.5
+  player: {fileID: 0}
 --- !u!4 &1693032916
 Transform:
   m_ObjectHideFlags: 0
@@ -76311,6 +76312,14 @@ PrefabInstance:
       propertyPath: shotCounter
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 8245839417486217699, guid: c1909b166b99980499d09741e9f3e95c, type: 3}
+      propertyPath: enemyhealth
+      value: 26
+      objectReference: {fileID: 0}
+    - target: {fileID: 8245839417486217699, guid: c1909b166b99980499d09741e9f3e95c, type: 3}
+      propertyPath: maxenemyhealth
+      value: 26
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -76336,8 +76345,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c5985eaf032c94742bc6db4266489046, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemy: {fileID: 0}
+  enemy: {fileID: 5329120757304063522, guid: bb77404131c75a94794f765d1f1dff58, type: 3}
   spawnTimer: 3.5
+  player: {fileID: 1678249562}
 --- !u!1 &1799316955
 GameObject:
   m_ObjectHideFlags: 0
