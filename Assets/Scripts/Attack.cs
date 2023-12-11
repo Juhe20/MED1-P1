@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Attack : MonoBehaviour
@@ -35,38 +33,34 @@ public class Attack : MonoBehaviour
 
         if (Input.GetButtonDown("Fire1"))
         {
-             
+
             meleeAttack();
-           Debug.Log(Input.mousePosition.x- Screen.width/2);
-           Debug.Log(Input.mousePosition.y - Screen.height / 2);
-            
+            Debug.Log(Input.mousePosition.x - Screen.width / 2);
+            Debug.Log(Input.mousePosition.y - Screen.height / 2);
+
             body.GetComponent<Animator>().SetBool("Attacking", true);
 
-            if (Input.mousePosition.x - Screen.width / 2 > 0 && Input.mousePosition.y - Screen.height/2 < 60 && Input.mousePosition.y - Screen.height / 2 > - 113)
+            if (Input.mousePosition.x - Screen.width / 2 > 0 && Input.mousePosition.y - Screen.height / 2 < 60 && Input.mousePosition.y - Screen.height / 2 > -113)
             {
-                Debug.Log("Test1");
                 body.GetComponent<Animator>().SetFloat("AttackX", 1);
                 body.GetComponent<Animator>().SetFloat("AttackY", 0);
             }
             if (Input.mousePosition.x - Screen.width / 2 < 0 && Input.mousePosition.y - Screen.height / 2 > -60 && Input.mousePosition.y - Screen.height / 2 < 113)
             {
-                Debug.Log("Test2");
                 body.GetComponent<Animator>().SetFloat("AttackX", -1);
                 body.GetComponent<Animator>().SetFloat("AttackY", 0);
             }
-            if (Input.mousePosition.y - Screen.height / 2 < 0 && Input.mousePosition.x - Screen.width/ 2 > -220 && Input.mousePosition.x - Screen.width / 2 < -200) 
+            if (Input.mousePosition.y - Screen.height / 2 < 0 && Input.mousePosition.x - Screen.width / 2 > -220 && Input.mousePosition.x - Screen.width / 2 < -200)
             {
-                Debug.Log("Test3");
                 body.GetComponent<Animator>().SetFloat("AttackY", -1);
                 body.GetComponent<Animator>().SetFloat("AttackX", 0);
             }
             if (Input.mousePosition.y - Screen.height / 2 > 0)
             {
-                Debug.Log("Test4");
                 body.GetComponent<Animator>().SetFloat("AttackY", 1);
                 body.GetComponent<Animator>().SetFloat("AttackX", 0);
             }
-     
+
         }
 
         if (Input.GetButtonDown("Fire2"))
@@ -76,7 +70,7 @@ public class Attack : MonoBehaviour
                 GameController.Mana--;
                 castMagic();
             }
-            
+
         }
     }
 
@@ -89,7 +83,7 @@ public class Attack : MonoBehaviour
             MeleePrefab.SetActive(true);
             isAttacking = true;
 
-        }        
+        }
     }
 
 
@@ -109,7 +103,7 @@ public class Attack : MonoBehaviour
         {
             body.GetComponent<Animator>().SetBool("Attacking", false);
             attackTimer += Time.deltaTime;
-            if(attackTimer >= attackDuration)
+            if (attackTimer >= attackDuration)
             {
                 attackTimer = 0;
                 isAttacking = false;
