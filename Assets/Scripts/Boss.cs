@@ -3,41 +3,61 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UIElements;
-using static UnityEngine.RuleTile.TilingRuleOutput;
+
+
+public enum State
+{
+    idle,
+    walk,
+    attack
+}
 
 public class Boss : MonoBehaviour
 {
     public GameObject player;
     public GameObject bulletPrefab;
     public GameObject bulletParent;
-    
-    public float bossSpeed = 2.5f;
+
+    public State currentState;
+
+    public GameObject direction;
+    public float bossSpeed = 1f;
     public float meleeRange = 1.3f;
-    public float rangedAttackRange = 5.3f;
+    public float rangedAttackRange = 6f;
     public float combatRange;
-    public float Cooldown = 0.6f;
+    public float Cooldown = 2f;
     public bool invurnable = false;
     public bool talks = false;
     public bool talked = false;
+    public bool moving = false;
     int shotCounter = 0;
     int damage = 3;
-    float fireRate = 1.5f;
-    float nextTimer = 2f;
+    //float fireRate = 1.5f;
+    //float nextTimer = 2f;
     bool hit = false;
-    public bool timer = false;
+    public bool timer;
 
+    private void Start()
+    {
+        currentState = State.idle;
+        GetComponent<Rigidbody2D>();
+    }
 
     private void FixedUpdate()
     {
+
+
         if (timer == true)
         {
             bossSpeed = 0;
-
         }
-        else if (timer == false) { bossSpeed = 2.5f;}
+        else if (timer == false)
+        {
+            bossSpeed = 1f;
+        }
 
-    combatRange = Vector2.Distance(transform.position, player.transform.position);
-        if (combatRange <= 8)  //Works
+        combatRange = Vector2.Distance(transform.position, player.transform.position);
+        if (combatRange <= 6)
         {
             talks = true;
             if (talks = true && talked == false)
@@ -46,27 +66,22 @@ public class Boss : MonoBehaviour
                 talked = true;
                 Debug.Log("Talks");
             }
-
-            transform.position =
-               Vector2.MoveTowards(transform.position, player.transform.position, bossSpeed * Time.deltaTime);
-
-            
-
         }
+        transform.position = Vector2.MoveTowards(transform.position, player.transform.position, bossSpeed * Time.deltaTime);
+
 
         if (combatRange <= meleeRange)
         {
-            meleeAttack();
+            MeleeAttack();
         }
-
 
         if (combatRange <= rangedAttackRange && shotCounter < 3 && combatRange > meleeRange)
         {
-            rangedAttack();
+            RangedAttack();
         }
     }
 
-    void meleeAttack()
+    void MeleeAttack()
     {
         hit = true;
         if (hit == true && timer == false)
@@ -77,17 +92,13 @@ public class Boss : MonoBehaviour
             GameController.DamagePlayer(damage);
             Debug.Log("Av");
         }
-
-
     }
 
-    private void rangedAttack()
+    void RangedAttack()
     {
-       
         Instantiate(bulletPrefab, bulletParent.transform.position, Quaternion.identity);
         StartCoroutine(CoolDown());
         shotCounter++;
-        
     }
 
     private IEnumerator CoolDown()
@@ -97,4 +108,5 @@ public class Boss : MonoBehaviour
         yield return new WaitForSeconds(Cooldown + 5);
         timer = false;
     }
+
 }
