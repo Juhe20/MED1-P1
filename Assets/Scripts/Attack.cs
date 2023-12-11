@@ -17,6 +17,7 @@ public class Attack : MonoBehaviour
     float attackTimer = 0f;
 
     bool isAttacking = false;
+    [SerializeField] private AudioSource HitSoundEffect;
 
     private void Start()
     {
@@ -83,6 +84,8 @@ public class Attack : MonoBehaviour
     {
         if (!isAttacking)
         {
+            HitSoundEffect.Play();
+
             MeleePrefab.SetActive(true);
             isAttacking = true;
 

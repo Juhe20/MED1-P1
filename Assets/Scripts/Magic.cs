@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Magic : MonoBehaviour
 {
+    [SerializeField] AudioSource Bullet;
     public float speed = 1f;
 
     // Update is called once per frame
@@ -21,6 +22,7 @@ public class Magic : MonoBehaviour
 
         if (collision.gameObject.CompareTag("Enemy"))
         {
+            Bullet.Play();
             collision.gameObject.GetComponent<EnemyController>().DamageEnemy(danmage+2);
         }
     }

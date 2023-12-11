@@ -18,9 +18,12 @@ public class EnemyController : MonoBehaviour
     {
         enemyhealth -= playerDamage;
 
+
         if (enemyhealth <= 0)
+
         {
             gameObject.SetActive(false);
+
         }
 
     }
