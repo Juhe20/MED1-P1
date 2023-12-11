@@ -26,7 +26,7 @@ public class Boss : MonoBehaviour
     public float rangedAttackRange = 6f;
     public float combatRange;
     public float Cooldown = 2f;
-    public bool invurnable = false;
+    public bool invulnerable = false;
     public bool talks = false;
     public bool talked = false;
     public bool moving = false;

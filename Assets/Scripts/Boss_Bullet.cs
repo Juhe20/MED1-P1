@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Boss_Bullet : MonoBehaviour
@@ -12,10 +10,10 @@ public class Boss_Bullet : MonoBehaviour
     // Update is called once per frame
     void Start()
     {
-        
+
         bulletrb = GetComponent<Rigidbody2D>();
         target = GameObject.FindWithTag("Player");
-        Vector2 moveDir = (target.transform.position - transform.position).normalized*speed;
+        Vector2 moveDir = (target.transform.position - transform.position).normalized * speed;
         bulletrb.velocity = new Vector2(moveDir.x, moveDir.y);
         Destroy(this.gameObject, 4);
 
@@ -27,6 +25,6 @@ public class Boss_Bullet : MonoBehaviour
         {
             GameController.DamagePlayer(damage);
         }
-        
+
     }
 }
