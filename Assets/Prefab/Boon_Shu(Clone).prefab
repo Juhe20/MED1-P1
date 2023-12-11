@@ -197,7 +197,7 @@ MonoBehaviour:
   Description: more speed
   Image: {fileID: -5071750751292039240, guid: ea66895454b693343ad1dfcf78405e73, type: 3}
   healthChange: 0
-  speedChange: 4
+  speedChange: 2
   manaChange: 0
   damageChange: 0
   shieldSize: 0
