@@ -17,7 +17,6 @@ public class Seth : MonoBehaviour
 	public float Cooldown = 2f;
 	public float combatRange;
 	public float timeToMove;
-	public float moveSpeed;
 	
 	private bool moving;
 	public bool timer = true;
@@ -59,10 +58,12 @@ public class Seth : MonoBehaviour
 
 			timeToMoveCounter -= Time.deltaTime;
 			myRigidbody.velocity = moveDirection;
-			animator.SetFloat("horizontal", moveDirection.normalized.x);
-			animator.SetFloat("vertical", moveDirection.normalized.y);
 
 			transform.position = Vector2.MoveTowards(transform.position, player.transform.position, bossSpeed * Time.deltaTime);
+
+			//Lines don't actually work as intended...
+			//animator.SetFloat("horizontal", moveDirection.normalized.x);
+			//animator.SetFloat("vertical", moveDirection.normalized.y);
 
 			combatRange = Vector2.Distance(transform.position, player.transform.position);
 			if (combatRange <= meleeRange)
@@ -70,7 +71,6 @@ public class Seth : MonoBehaviour
 				animator.SetBool("isWalking", false);
 				animator.SetBool("isAttacking", true);
 				MeleeAttack();
-
 			}
 
 			if (combatRange <= rangedAttackRange && shotCounter < 3 && combatRange > 6)
@@ -89,12 +89,13 @@ public class Seth : MonoBehaviour
 
 		else
 		{
+			combatRange = Vector2.Distance(transform.position, player.transform.position);
 			animator.SetBool("isWalking", false);
 
 			timeBetweenMoveCounter -= Time.deltaTime;
 			myRigidbody.velocity = Vector2.zero;
 
-			if (timeBetweenMoveCounter < 0f)
+			if (timeBetweenMoveCounter < 0f && combatRange < 14)
 			{
 				moving = true;
 				timeToMoveCounter = timeToMove;
