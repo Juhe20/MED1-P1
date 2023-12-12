@@ -13,7 +13,7 @@ public class GameController : MonoBehaviour
     private static int mana = 5;
     private static int maxMana = 10;
     private static int minMana = 0;
-    private static float moveSpeed = 1.0f;
+    private static float moveSpeed = 1.5f;
     private static float damage = 1.0f;
     private static int shield = 0;
     private static bool revive = false;
@@ -103,8 +103,10 @@ public class GameController : MonoBehaviour
         SceneManager.LoadScene(0);
         health = 5;
         mana = 5;
-        moveSpeed = 1.0f;
+        moveSpeed = 1.5f;
         damage = 1.0f;
+        currentlyCollectedTablets = 0;
+        collectedTablets = 0;
     }
 
 
