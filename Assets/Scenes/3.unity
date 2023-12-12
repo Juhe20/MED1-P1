@@ -75280,7 +75280,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4183219467795892971, guid: d8b2f3e818664fe499112656b028b194, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.03
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4183219467795892971, guid: d8b2f3e818664fe499112656b028b194, type: 3}
       propertyPath: m_LocalRotation.w
@@ -75823,11 +75823,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1102243530}
   m_CullTransparentMesh: 1
---- !u!1 &1136174657 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 206515866427689505, guid: c1909b166b99980499d09741e9f3e95c, type: 3}
-  m_PrefabInstance: {fileID: 1779946457}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1217520684
 GameObject:
   m_ObjectHideFlags: 0
@@ -76574,9 +76569,8 @@ MonoBehaviour:
   imageContainer: {fileID: 104311564}
   Manabar: {fileID: 1960425600}
   tabletText: {fileID: 1921656730}
-  Seth: {fileID: 1136174657}
   tabletSentences:
-  - You beat Seth! You have taken the throne of Egypt.
+  - sumtin wong
   - "Well Well Well! If it isn\u2019t my Son Horus before me? You have found one
     of my stone tablets.\nAs you know, I am the God Osiris, ruler of Egypt! Or rather,
     that was before my own brother Seth killed me! Now I am known as the ruler of
