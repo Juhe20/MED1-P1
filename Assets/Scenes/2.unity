@@ -611,7 +611,7 @@ MonoBehaviour:
   distanceBetween: 5
   AttackRange: 1.1
   Cooldown: 0.5
-  enemyDamage: 1
+  enemyDamage: 2
   attackSpeed: 1
   PlayerDamage: {fileID: 96438785}
 --- !u!212 &96438782
@@ -1239,7 +1239,7 @@ MonoBehaviour:
   distanceBetween: 5
   AttackRange: 1.1
   Cooldown: 0.5
-  enemyDamage: 1
+  enemyDamage: 2
   attackSpeed: 1
   PlayerDamage: {fileID: 96438785}
 --- !u!212 &179030058
@@ -2741,7 +2741,7 @@ MonoBehaviour:
   distanceBetween: 5
   AttackRange: 1.1
   Cooldown: 0.5
-  enemyDamage: 1
+  enemyDamage: 2
   attackSpeed: 1
   PlayerDamage: {fileID: 96438785}
 --- !u!212 &261598428
@@ -3235,7 +3235,7 @@ MonoBehaviour:
   distanceBetween: 5
   AttackRange: 1.1
   Cooldown: 0.5
-  enemyDamage: 1
+  enemyDamage: 2
   attackSpeed: 1
   PlayerDamage: {fileID: 310278652}
 --- !u!212 &310278649
@@ -4077,7 +4077,7 @@ MonoBehaviour:
   distanceBetween: 5
   AttackRange: 1.1
   Cooldown: 0.5
-  enemyDamage: 1
+  enemyDamage: 2
   attackSpeed: 1
   PlayerDamage: {fileID: 96438785}
 --- !u!212 &391006549
@@ -108728,9 +108728,9 @@ BoxCollider2D:
   m_Offset: {x: 0.025000002, y: 0.16}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.4074074, y: 0}
-    oldSize: {x: 0.27, y: 0.32}
-    newSize: {x: 0.27, y: 0.32}
+    pivot: {x: 0.6111111, y: 0}
+    oldSize: {x: 0.18, y: 0.32}
+    newSize: {x: 0.18, y: 0.32}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -108779,12 +108779,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -669345834123095279, guid: 8763d8cde019fc94abf826b2fca75ce5, type: 3}
+  m_Sprite: {fileID: -7039907357631078536, guid: e55ca4bf3d655bc40ac5499a511d7a3f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.27, y: 0.32}
+  m_Size: {x: 0.18, y: 0.32}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -109010,7 +109010,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -144395602721208122, guid: 8763d8cde019fc94abf826b2fca75ce5, type: 3}
+  m_Sprite: {fileID: -7039907357631078536, guid: e55ca4bf3d655bc40ac5499a511d7a3f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -111351,7 +111351,7 @@ MonoBehaviour:
   distanceBetween: 5
   AttackRange: 1.1
   Cooldown: 0.5
-  enemyDamage: 1
+  enemyDamage: 2
   attackSpeed: 1
   PlayerDamage: {fileID: 1053327852}
 --- !u!212 &1053327849
@@ -112577,9 +112577,9 @@ BoxCollider2D:
   m_Offset: {x: 0.025000002, y: 0.16}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.4074074, y: 0}
-    oldSize: {x: 0.27, y: 0.32}
-    newSize: {x: 0.27, y: 0.32}
+    pivot: {x: 0.6111111, y: 0}
+    oldSize: {x: 0.18, y: 0.32}
+    newSize: {x: 0.18, y: 0.32}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -112628,12 +112628,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -669345834123095279, guid: 8763d8cde019fc94abf826b2fca75ce5, type: 3}
+  m_Sprite: {fileID: -7039907357631078536, guid: e55ca4bf3d655bc40ac5499a511d7a3f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.27, y: 0.32}
+  m_Size: {x: 0.18, y: 0.32}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -114153,7 +114153,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -144395602721208122, guid: 8763d8cde019fc94abf826b2fca75ce5, type: 3}
+  m_Sprite: {fileID: -7039907357631078536, guid: e55ca4bf3d655bc40ac5499a511d7a3f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -114407,7 +114407,7 @@ MonoBehaviour:
   distanceBetween: 5
   AttackRange: 1.1
   Cooldown: 0.5
-  enemyDamage: 1
+  enemyDamage: 2
   attackSpeed: 1
   PlayerDamage: {fileID: 96438785}
 --- !u!212 &1537851374
@@ -114722,9 +114722,9 @@ BoxCollider2D:
   m_Offset: {x: 0.025000002, y: 0.16}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.4074074, y: 0}
-    oldSize: {x: 0.27, y: 0.32}
-    newSize: {x: 0.27, y: 0.32}
+    pivot: {x: 0.6111111, y: 0}
+    oldSize: {x: 0.18, y: 0.32}
+    newSize: {x: 0.18, y: 0.32}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -114773,12 +114773,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -669345834123095279, guid: 8763d8cde019fc94abf826b2fca75ce5, type: 3}
+  m_Sprite: {fileID: -7039907357631078536, guid: e55ca4bf3d655bc40ac5499a511d7a3f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.27, y: 0.32}
+  m_Size: {x: 0.18, y: 0.32}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -121132,7 +121132,7 @@ MonoBehaviour:
   distanceBetween: 5
   AttackRange: 1.1
   Cooldown: 0.5
-  enemyDamage: 1
+  enemyDamage: 2
   attackSpeed: 1
   PlayerDamage: {fileID: 96438785}
 --- !u!212 &1990073274
