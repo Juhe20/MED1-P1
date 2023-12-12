@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class UI_Controller : MonoBehaviour
 {
+   
     public GameObject tabletsCollectedWindow;
     public TextMeshProUGUI tabletsCollectedText;
     private static int inDialogue = 0;
@@ -71,7 +72,7 @@ public class UI_Controller : MonoBehaviour
             boonDialogue.SetActive(false);
         }
 
-        Debug.Log(inDialogue);
+        
         if (NextLevel.NextScene == 1)
         {
             if (inDialogue == 5 || InDialogue == 2 && GameController.CurrentlyCollectedTablets == 0)
@@ -134,6 +135,7 @@ public class UI_Controller : MonoBehaviour
 
     public void StartBoonDialogue()
     {
+        
         boonDialogue.SetActive(true);
         nameText.SetText(characterNames[GameController.GodDialogue]);
         imageContainer.sprite = (characterPortrait[GameController.GodDialogue]);

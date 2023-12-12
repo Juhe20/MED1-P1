@@ -34,6 +34,7 @@ public class Boon : MonoBehaviour
         {
             if (Input.GetKey("e"))
             {
+                Speaking.Play();
                 boonsCollected++;
                 BoonCollision = true;
                 GameController.HealPlayer(healthChange);
@@ -44,7 +45,7 @@ public class Boon : MonoBehaviour
                 GameController.reviveSet(revive);
                 gameObject.SetActive(false);
                 Time.timeScale = 0;
-                Speaking.Play();
+                
 
             }
         }
