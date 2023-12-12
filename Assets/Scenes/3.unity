@@ -2913,7 +2913,7 @@ MonoBehaviour:
   imageContainer: {fileID: 1790060009}
   Manabar: {fileID: 1624750283}
   tabletText: {fileID: 1880206698}
-  Seth: {fileID: 0}
+  Seth: {fileID: 1666852494}
   tabletSentences:
   - sumtin wong
   - "Well Well Well! If it isn\u2019t my Son Horus before me? You have found one
@@ -2948,7 +2948,7 @@ MonoBehaviour:
     uncle\u2026 Good luck my son!\n"
   boonText: {fileID: 2109823607}
   boonSentences:
-  - Sumtin wong
+  - You have defeated Seth. You are now the new ruler of Egypt!
   - "I am Tefnut, the deity of moisture! You have found my boon. \r\nAre you hurt?
     Here, have some help from me to strengthen your health.\r"
   - "I am Seth, the God of chaos. You have found my boon. \r\nYou will never defeat
@@ -78597,7 +78597,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2319354665601470595, guid: c1909b166b99980499d09741e9f3e95c, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 0.06
       objectReference: {fileID: 0}
     - target: {fileID: 2319354665601470595, guid: c1909b166b99980499d09741e9f3e95c, type: 3}
       propertyPath: m_LocalRotation.w
@@ -78640,6 +78640,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c1909b166b99980499d09741e9f3e95c, type: 3}
+--- !u!1 &1666852494 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 206515866427689505, guid: c1909b166b99980499d09741e9f3e95c, type: 3}
+  m_PrefabInstance: {fileID: 1666852493}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1790060006
 GameObject:
   m_ObjectHideFlags: 0
