@@ -336,7 +336,7 @@ MonoBehaviour:
   speed: 1.2
   distanceBetween: 5
   AttackRange: 1.1
-  Cooldown: 0.5
+  Cooldown: 1
   enemyDamage: 1
   attackSpeed: 1
   PlayerDamage: {fileID: 8690201}
@@ -1176,7 +1176,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a39071d86c17dd4e8eb1fe66405cb97, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Speaking: {fileID: 50100736}
   Name: Shu boon
   Description: more speed
   Image: {fileID: -5071750751292039240, guid: ea66895454b693343ad1dfcf78405e73, type: 3}
@@ -4100,7 +4099,7 @@ MonoBehaviour:
   speed: 1.2
   distanceBetween: 5
   AttackRange: 1.1
-  Cooldown: 0.5
+  Cooldown: 1
   enemyDamage: 1
   attackSpeed: 1
   PlayerDamage: {fileID: 378838362}
@@ -4672,7 +4671,7 @@ MonoBehaviour:
   speed: 1.2
   distanceBetween: 5
   AttackRange: 1.1
-  Cooldown: 0.5
+  Cooldown: 1
   enemyDamage: 1
   attackSpeed: 1
   PlayerDamage: {fileID: 403410582}
@@ -14629,7 +14628,7 @@ MonoBehaviour:
   speed: 1.2
   distanceBetween: 5
   AttackRange: 1.1
-  Cooldown: 0.5
+  Cooldown: 1
   enemyDamage: 1
   attackSpeed: 1
   PlayerDamage: {fileID: 672182191}
@@ -15224,7 +15223,7 @@ MonoBehaviour:
   speed: 1.2
   distanceBetween: 5
   AttackRange: 1.1
-  Cooldown: 0.5
+  Cooldown: 1
   enemyDamage: 1
   attackSpeed: 1
   PlayerDamage: {fileID: 709355681}
@@ -16133,7 +16132,7 @@ MonoBehaviour:
   speed: 1.2
   distanceBetween: 5
   AttackRange: 1.1
-  Cooldown: 0.5
+  Cooldown: 1
   enemyDamage: 1
   attackSpeed: 1
   PlayerDamage: {fileID: 780742792}
@@ -16545,6 +16544,7 @@ MonoBehaviour:
   imageContainer: {fileID: 1721583466}
   Manabar: {fileID: 1821352377}
   tabletText: {fileID: 1422829835}
+  Seth: {fileID: 0}
   tabletSentences:
   - sumtin wong
   - "Well Well Well! If it isn\u2019t my Son Horus before me? You have found one
@@ -17117,7 +17117,7 @@ MonoBehaviour:
   speed: 1.2
   distanceBetween: 5
   AttackRange: 1.1
-  Cooldown: 0.5
+  Cooldown: 1
   enemyDamage: 1
   attackSpeed: 1
   PlayerDamage: {fileID: 902096039}
@@ -18870,7 +18870,7 @@ MonoBehaviour:
   speed: 1.2
   distanceBetween: 5
   AttackRange: 1.1
-  Cooldown: 0.5
+  Cooldown: 1
   enemyDamage: 1
   attackSpeed: 1
   PlayerDamage: {fileID: 1014750100}
@@ -20601,7 +20601,7 @@ MonoBehaviour:
   speed: 1.2
   distanceBetween: 5
   AttackRange: 1.1
-  Cooldown: 0.5
+  Cooldown: 1
   enemyDamage: 1
   attackSpeed: 1
   PlayerDamage: {fileID: 1308733416}
@@ -22032,7 +22032,7 @@ MonoBehaviour:
   speed: 1.2
   distanceBetween: 5
   AttackRange: 1.1
-  Cooldown: 0.5
+  Cooldown: 1
   enemyDamage: 1
   attackSpeed: 1
   PlayerDamage: {fileID: 1437161136}
@@ -75097,7 +75097,7 @@ MonoBehaviour:
   speed: 1.2
   distanceBetween: 5
   AttackRange: 1.1
-  Cooldown: 0.5
+  Cooldown: 1
   enemyDamage: 1
   attackSpeed: 1
   PlayerDamage: {fileID: 1654555402}
@@ -88606,7 +88606,7 @@ MonoBehaviour:
   speed: 1.2
   distanceBetween: 5
   AttackRange: 1.1
-  Cooldown: 0.5
+  Cooldown: 1
   enemyDamage: 1
   attackSpeed: 1
   PlayerDamage: {fileID: 2020189085}
@@ -90771,7 +90771,7 @@ MonoBehaviour:
   speed: 1.2
   distanceBetween: 4
   AttackRange: 1.1
-  Cooldown: 0.5
+  Cooldown: 1
   enemyDamage: 1
   attackSpeed: 1
   PlayerDamage: {fileID: 9211701083437861862}
