@@ -2,7 +2,6 @@ using UnityEngine;
 
 public class Boon : MonoBehaviour
 {
-    [SerializeField] private AudioSource Speaking;
     public string Name;
     public string Description;
     public Sprite Image;
@@ -34,7 +33,6 @@ public class Boon : MonoBehaviour
         {
             if (Input.GetKey("e"))
             {
-                Speaking.Play();
                 boonsCollected++;
                 BoonCollision = true;
                 GameController.HealPlayer(healthChange);
