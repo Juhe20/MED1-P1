@@ -41,7 +41,7 @@ public class UI_Controller : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.Space))
             {
                 TabletCollision.TabletCollide = false;
-                GameController.MoveSpeed = 1;
+               
                 Time.timeScale = 1;
             }
         }

@@ -337,7 +337,7 @@ MonoBehaviour:
   distanceBetween: 5
   AttackRange: 1.1
   Cooldown: 1
-  enemyDamage: 1
+  enemyDamage: 2
   attackSpeed: 1
   PlayerDamage: {fileID: 8690201}
 --- !u!212 &8690197
@@ -4100,7 +4100,7 @@ MonoBehaviour:
   distanceBetween: 5
   AttackRange: 1.1
   Cooldown: 1
-  enemyDamage: 1
+  enemyDamage: 2
   attackSpeed: 1
   PlayerDamage: {fileID: 378838362}
 --- !u!212 &378838358
@@ -4672,7 +4672,7 @@ MonoBehaviour:
   distanceBetween: 5
   AttackRange: 1.1
   Cooldown: 1
-  enemyDamage: 1
+  enemyDamage: 2
   attackSpeed: 1
   PlayerDamage: {fileID: 403410582}
 --- !u!212 &403410578
@@ -14629,7 +14629,7 @@ MonoBehaviour:
   distanceBetween: 5
   AttackRange: 1.1
   Cooldown: 1
-  enemyDamage: 1
+  enemyDamage: 2
   attackSpeed: 1
   PlayerDamage: {fileID: 672182191}
 --- !u!212 &672182187
@@ -15224,7 +15224,7 @@ MonoBehaviour:
   distanceBetween: 5
   AttackRange: 1.1
   Cooldown: 1
-  enemyDamage: 1
+  enemyDamage: 2
   attackSpeed: 1
   PlayerDamage: {fileID: 709355681}
 --- !u!212 &709355677
@@ -16133,7 +16133,7 @@ MonoBehaviour:
   distanceBetween: 5
   AttackRange: 1.1
   Cooldown: 1
-  enemyDamage: 1
+  enemyDamage: 2
   attackSpeed: 1
   PlayerDamage: {fileID: 780742792}
 --- !u!212 &780742788
@@ -17118,7 +17118,7 @@ MonoBehaviour:
   distanceBetween: 5
   AttackRange: 1.1
   Cooldown: 1
-  enemyDamage: 1
+  enemyDamage: 2
   attackSpeed: 1
   PlayerDamage: {fileID: 902096039}
 --- !u!212 &902096035
@@ -18871,7 +18871,7 @@ MonoBehaviour:
   distanceBetween: 5
   AttackRange: 1.1
   Cooldown: 1
-  enemyDamage: 1
+  enemyDamage: 2
   attackSpeed: 1
   PlayerDamage: {fileID: 1014750100}
 --- !u!212 &1014750096
@@ -20602,7 +20602,7 @@ MonoBehaviour:
   distanceBetween: 5
   AttackRange: 1.1
   Cooldown: 1
-  enemyDamage: 1
+  enemyDamage: 2
   attackSpeed: 1
   PlayerDamage: {fileID: 1308733416}
 --- !u!212 &1308733412
@@ -22033,7 +22033,7 @@ MonoBehaviour:
   distanceBetween: 5
   AttackRange: 1.1
   Cooldown: 1
-  enemyDamage: 1
+  enemyDamage: 2
   attackSpeed: 1
   PlayerDamage: {fileID: 1437161136}
 --- !u!212 &1437161132
@@ -75098,7 +75098,7 @@ MonoBehaviour:
   distanceBetween: 5
   AttackRange: 1.1
   Cooldown: 1
-  enemyDamage: 1
+  enemyDamage: 2
   attackSpeed: 1
   PlayerDamage: {fileID: 1654555402}
 --- !u!212 &1654555398
@@ -88607,7 +88607,7 @@ MonoBehaviour:
   distanceBetween: 5
   AttackRange: 1.1
   Cooldown: 1
-  enemyDamage: 1
+  enemyDamage: 2
   attackSpeed: 1
   PlayerDamage: {fileID: 2020189085}
 --- !u!212 &2020189081
@@ -90769,10 +90769,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 424391094}
   speed: 1.2
-  distanceBetween: 4
+  distanceBetween: 5
   AttackRange: 1.1
   Cooldown: 1
-  enemyDamage: 1
+  enemyDamage: 2
   attackSpeed: 1
   PlayerDamage: {fileID: 9211701083437861862}
 --- !u!114 &9211701083437861860

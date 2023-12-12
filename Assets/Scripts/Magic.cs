@@ -11,6 +11,8 @@ public class Magic : MonoBehaviour
     void Update()
     {
         transform.position += transform.right * Time.deltaTime * speed;
+
+
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -18,10 +20,12 @@ public class Magic : MonoBehaviour
         Bullet.Play();
         Destroy(gameObject);
         float danmage = GameController.Damage;
+        
         Destroy(gameObject);
 
         if (collision.gameObject.CompareTag("Enemy"))
-        {          
+        {
+            
             collision.gameObject.GetComponent<EnemyController>().DamageEnemy(danmage+2);
         }
     }
