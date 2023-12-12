@@ -113,7 +113,7 @@ public class UI_Controller : MonoBehaviour
             if (!Seth.activeInHierarchy) //Checks if Seth is active or not and displays the victory dialogue if he's inactive.
             {
                 Dialoguepanel.SetActive(true);
-                nameText.SetText(characterNames[6]); ;
+                nameText.SetText(characterNames[6]); 
                 tabletText.SetText(tabletSentences[0]);
             }
 
