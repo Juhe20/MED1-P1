@@ -121,10 +121,8 @@ public class Movement : MonoBehaviour
 
     }
 
-    private void OnCollisionStay2D(Collision2D collision)
+    private void OnCollisionStay2D(Collision2D collision) //Checks collision with boon tags for dialogue variables.
     {
-
-
         if (collision.gameObject.CompareTag("tefnut"))
         {
             GameController.GodDialogue = 1;
@@ -152,7 +150,7 @@ public class Movement : MonoBehaviour
 
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnCollisionEnter2D(Collision2D collision) //Checks stair collision for dialogue
     {
         if (collision.gameObject.CompareTag("stair"))
         {
@@ -165,7 +163,7 @@ public class Movement : MonoBehaviour
     }
 
 
-        private IEnumerator Dash()
+        private IEnumerator Dash() //Updates players velocity with a new vector to push it in a direction. Puts it on cooldown afterwards.
     {
         canDash = false;
         isDashing = true;

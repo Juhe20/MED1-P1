@@ -13,18 +13,14 @@ public class StoneTablet : MonoBehaviour
     int randomSpawnPoint2;
     int i = 0;
 
-
-
     private void Start()
     {
-
         TabletSpawner();
-        
     }
 
     void TabletSpawner()
     {
-        while (i == 0)
+        while (i == 0) //Opdaterer i til 1 så snart den har spawnet 2 tablets på 2 forskellige spawnpoints.
         {
             randomSpawnPoint = Random.Range(0, spawnPoints.Length);
             randomSpawnPoint2 = Random.Range(0, spawnPoints.Length);
