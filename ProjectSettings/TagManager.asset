@@ -3,7 +3,18 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - StoneTablet
+  - PlayerAttack
+  - Enemy
+  - ChatPanel
+  - shu
+  - nut
+  - tefnut
+  - geb
+  - osiris
+  - seth
+  - stair
   layers:
   - Default
   - TransparentFX

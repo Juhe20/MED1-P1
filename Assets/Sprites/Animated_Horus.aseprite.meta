@@ -1,0 +1,1592 @@
+fileFormatVersion: 2
+guid: 28ada68b0bf895b4390dec1a64c71cc9
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  previousAsepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  asepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 0
+  textureAssetName: 
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  animatedSpriteImportData:
+  - name: Animated_Horus_Frame_0
+    originalName: 
+    pivot: {x: 0.6333333, y: -0.03125}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 279
+      width: 30
+      height: 32
+    spriteID: 53e03d4dc4ffa3e44bafedb439984296
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 279}
+  - name: Animated_Horus_Frame_1
+    originalName: 
+    pivot: {x: 0.6333333, y: -0.03125}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 319
+      width: 30
+      height: 32
+    spriteID: 46939a91af7ebbf4d96580bcf6abdcfb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 319}
+  - name: Animated_Horus_Frame_2
+    originalName: 
+    pivot: {x: 0.6333333, y: -0.03125}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 359
+      width: 30
+      height: 32
+    spriteID: 9edc3429a97c79d45b24dcf4ba50426a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 359}
+  - name: Animated_Horus_Frame_3
+    originalName: 
+    pivot: {x: 0.6333333, y: -0.03125}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 399
+      width: 30
+      height: 32
+    spriteID: 402f5df3d64948643950754a1ce412f1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 399}
+  - name: Animated_Horus_Frame_4
+    originalName: 
+    pivot: {x: 0.36666667, y: -0.03125}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 439
+      width: 30
+      height: 32
+    spriteID: 564ad81f2725f3043b227f329ffdacc9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 439}
+  - name: Animated_Horus_Frame_5
+    originalName: 
+    pivot: {x: 0.36666667, y: -0.03125}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 49
+      y: 4
+      width: 30
+      height: 32
+    spriteID: 6f5b5845c549b4045b9c11098abc1c28
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 49, y: 4}
+  - name: Animated_Horus_Frame_6
+    originalName: 
+    pivot: {x: 0.36666667, y: -0.03125}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 49
+      y: 44
+      width: 30
+      height: 32
+    spriteID: 91dba151a0cf7604faaaa64a14dde7ba
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 49, y: 44}
+  - name: Animated_Horus_Frame_7
+    originalName: 
+    pivot: {x: 0.36666667, y: -0.03125}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 49
+      y: 84
+      width: 30
+      height: 32
+    spriteID: 3e3d41a24e30c034097deb0ad32c9848
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 49, y: 84}
+  - name: Animated_Horus_Frame_8
+    originalName: 
+    pivot: {x: 0.5, y: -0.03030303}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 87
+      y: 446
+      width: 20
+      height: 33
+    spriteID: 95e5fbc5e8663dc46b469c3b8a561d0c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 87, y: 446}
+  - name: Animated_Horus_Frame_9
+    originalName: 
+    pivot: {x: 0.5, y: -0.03030303}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 123
+      y: 4
+      width: 20
+      height: 33
+    spriteID: 7895f63b413e57b459de7b62464231cc
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 123, y: 4}
+  - name: Animated_Horus_Frame_10
+    originalName: 
+    pivot: {x: 0.5, y: -0.03030303}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 123
+      y: 45
+      width: 20
+      height: 33
+    spriteID: 586d7ba6943c9f2439abdd13dc04c95d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 123, y: 45}
+  - name: Animated_Horus_Frame_11
+    originalName: 
+    pivot: {x: 0.5, y: -0.03030303}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 123
+      y: 86
+      width: 20
+      height: 33
+    spriteID: 57a8f582ab0dc004784764746a44ad8e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 123, y: 86}
+  - name: Animated_Horus_Frame_12
+    originalName: 
+    pivot: {x: 0.45, y: -0.03030303}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 123
+      y: 127
+      width: 20
+      height: 33
+    spriteID: 0575eb00c12770d4b8b2244d86746e2c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 123, y: 127}
+  - name: Animated_Horus_Frame_13
+    originalName: 
+    pivot: {x: 0.45, y: -0.03125}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 151
+      y: 45
+      width: 20
+      height: 32
+    spriteID: 4f6c2e0ae256ff74eb4849039ed2362b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 151, y: 45}
+  - name: Animated_Horus_Frame_14
+    originalName: 
+    pivot: {x: 0.36666667, y: -0.03125}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 49
+      y: 124
+      width: 30
+      height: 32
+    spriteID: 326bca0d3862b6040a8fcc6aa84bd8ea
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 49, y: 124}
+  - name: Animated_Horus_Frame_15
+    originalName: 
+    pivot: {x: 0.4864865, y: -0.032258067}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 84
+      width: 37
+      height: 31
+    spriteID: 8a8bafbc520594c458770a31e1e10e82
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 84}
+  - name: Animated_Horus_Frame_16
+    originalName: 
+    pivot: {x: 0.47222224, y: -0.032258067}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 162
+      width: 36
+      height: 31
+    spriteID: d0b3280954cf2bf40b06103a89cee6cd
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 162}
+  - name: Animated_Horus_Frame_17
+    originalName: 
+    pivot: {x: 0.4864865, y: -0.03125}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 37
+      height: 32
+    spriteID: a55b6291dea87da4da58fa73b5f77c3a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+  - name: Animated_Horus_Frame_18
+    originalName: 
+    pivot: {x: 0.36666667, y: -0.03125}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 49
+      y: 164
+      width: 30
+      height: 32
+    spriteID: dcd4352c48473174992b112f16821c78
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 49, y: 164}
+  - name: Animated_Horus_Frame_19
+    originalName: 
+    pivot: {x: 0.6333333, y: -0.03125}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 49
+      y: 204
+      width: 30
+      height: 32
+    spriteID: bcce9bcef0df78245a825dc6abdeba2e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 49, y: 204}
+  - name: Animated_Horus_Frame_20
+    originalName: 
+    pivot: {x: 0.5135135, y: -0.032258067}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 123
+      width: 37
+      height: 31
+    spriteID: de897f094886d1f4a824f24ad66fd39a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 123}
+  - name: Animated_Horus_Frame_21
+    originalName: 
+    pivot: {x: 0.5277778, y: -0.032258067}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 201
+      width: 36
+      height: 31
+    spriteID: 9d698ae865ab6974cae333ec7a30a85e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 201}
+  - name: Animated_Horus_Frame_22
+    originalName: 
+    pivot: {x: 0.5135135, y: -0.03125}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 44
+      width: 37
+      height: 32
+    spriteID: cd2df309aa2a7a34c893cff6ad1027e9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 44}
+  - name: Animated_Horus_Frame_23
+    originalName: 
+    pivot: {x: 0.6333333, y: -0.03125}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 49
+      y: 244
+      width: 30
+      height: 32
+    spriteID: 7c97582ea0125f240bda8401c06f160a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 49, y: 244}
+  - name: Animated_Horus_Frame_24
+    originalName: 
+    pivot: {x: 0.5, y: -0.03030303}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 123
+      y: 168
+      width: 20
+      height: 33
+    spriteID: b7d14bc2f0c6809429b8f975457069c9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 123, y: 168}
+  - name: Animated_Horus_Frame_25
+    originalName: 
+    pivot: {x: 0.5833333, y: -0.03030303}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 87
+      y: 242
+      width: 24
+      height: 33
+    spriteID: 556bc712c29e06d4a925255b9b7711f3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 87, y: 242}
+  - name: Animated_Horus_Frame_26
+    originalName: 
+    pivot: {x: 0.6551724, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 49
+      y: 444
+      width: 29
+      height: 33
+    spriteID: 12baa88d8d61dad49a09c9ee0f5e23be
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 49, y: 444}
+  - name: Animated_Horus_Frame_27
+    originalName: 
+    pivot: {x: 0.5454545, y: -0.032258067}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 87
+      y: 323
+      width: 22
+      height: 31
+    spriteID: 265980aa7411f804da8df74a3f217a15
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 87, y: 323}
+  - name: Animated_Horus_Frame_28
+    originalName: 
+    pivot: {x: 0.45454547, y: -0.03125}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 87
+      y: 283
+      width: 22
+      height: 32
+    spriteID: 506159218e361bf498937d36a6c2d77f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 87, y: 283}
+  - name: Animated_Horus_Frame_29
+    originalName: 
+    pivot: {x: 0.32142854, y: -0.03125}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 87
+      y: 4
+      width: 28
+      height: 32
+    spriteID: 1be2012dadd1f0444b9943ff66b74071
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 87, y: 4}
+  - name: Animated_Horus_Frame_30
+    originalName: 
+    pivot: {x: 0.5, y: -0.032258067}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 240
+      width: 32
+      height: 31
+    spriteID: f491cec4fa7ba7844a77a65ab63cb0a8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 240}
+  - name: Animated_Horus_Frame_31
+    originalName: 
+    pivot: {x: 0.6785714, y: -0.03125}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 87
+      y: 44
+      width: 28
+      height: 32
+    spriteID: d1b2887e4cc76184397396d5628b19e4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 87, y: 44}
+  - name: Animated_Horus_Frame_32
+    originalName: 
+    pivot: {x: 0.36666667, y: -0.03125}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 49
+      y: 284
+      width: 30
+      height: 32
+    spriteID: a7da40ff919063e488cb72e4f1ba9ac2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 49, y: 284}
+  - name: Animated_Horus_Frame_33
+    originalName: 
+    pivot: {x: 0.36666667, y: -0.03125}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 49
+      y: 324
+      width: 30
+      height: 32
+    spriteID: 8aaf46b90b1263d47aef7ec11cc35679
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 49, y: 324}
+  - name: Animated_Horus_Frame_34
+    originalName: 
+    pivot: {x: 0.32142854, y: -0.032258067}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 87
+      y: 84
+      width: 28
+      height: 31
+    spriteID: bac2ab6917411c344ac7bad8788503b6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 87, y: 84}
+  - name: Animated_Horus_Frame_35
+    originalName: 
+    pivot: {x: 0.2962963, y: -0.03125}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 87
+      y: 162
+      width: 27
+      height: 32
+    spriteID: dcbf5d88fd5e7e242b50bc6f2e739bfc
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 87, y: 162}
+  - name: Animated_Horus_Frame_36
+    originalName: 
+    pivot: {x: 0.6333333, y: -0.03125}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 49
+      y: 364
+      width: 30
+      height: 32
+    spriteID: 9fe04a75e7cccce4abb0ed0edb71393c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 49, y: 364}
+  - name: Animated_Horus_Frame_37
+    originalName: 
+    pivot: {x: 0.6333333, y: -0.03125}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 49
+      y: 404
+      width: 30
+      height: 32
+    spriteID: 869f93d5332a9484c913e48b7e85cf78
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 49, y: 404}
+  - name: Animated_Horus_Frame_38
+    originalName: 
+    pivot: {x: 0.6785714, y: -0.032258067}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 87
+      y: 123
+      width: 28
+      height: 31
+    spriteID: d8ae9c20e2568f343b7ae763dbe2dba1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 87, y: 123}
+  - name: Animated_Horus_Frame_39
+    originalName: 
+    pivot: {x: 0.7037037, y: -0.03125}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 87
+      y: 202
+      width: 27
+      height: 32
+    spriteID: c54e118f3213e084ba589ed01b414e4c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 87, y: 202}
+  - name: Animated_Horus_Frame_40
+    originalName: 
+    pivot: {x: 0.5, y: -0.03030303}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 123
+      y: 209
+      width: 20
+      height: 33
+    spriteID: 680f474349d60074aba4addac922111a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 123, y: 209}
+  - name: Animated_Horus_Frame_41
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 123
+      y: 250
+      width: 20
+      height: 33
+    spriteID: 7b30e7eccc0d18145a00ddd625e76ff1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 123, y: 250}
+  - name: Animated_Horus_Frame_42
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 87
+      y: 362
+      width: 20
+      height: 34
+    spriteID: 269963090298d774b8937904d082735e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 87, y: 362}
+  - name: Animated_Horus_Frame_43
+    originalName: 
+    pivot: {x: 0.5, y: -0.03030303}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 123
+      y: 291
+      width: 20
+      height: 33
+    spriteID: ed7fae9627aa32d4ea1263c1ff6fd02b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 123, y: 291}
+  - name: Animated_Horus_Frame_44
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 123
+      y: 332
+      width: 20
+      height: 33
+    spriteID: 73ae3563bc45c894b8a612844a9bc890
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 123, y: 332}
+  - name: Animated_Horus_Frame_45
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 87
+      y: 404
+      width: 20
+      height: 34
+    spriteID: 149640d27bdafb4448799a9bfa468719
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 87, y: 404}
+  - name: Animated_Horus_Frame_46
+    originalName: 
+    pivot: {x: 0.45, y: -0.03030303}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 123
+      y: 373
+      width: 20
+      height: 33
+    spriteID: 7c5b6b735cbe47f4a92a268ae9c421ff
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 123, y: 373}
+  - name: Animated_Horus_Frame_47
+    originalName: 
+    pivot: {x: 0.45, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 151
+      y: 85
+      width: 20
+      height: 32
+    spriteID: d8cbf09618f6fbb4bb4be675a98f65a3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 151, y: 85}
+  - name: Animated_Horus_Frame_48
+    originalName: 
+    pivot: {x: 0.45, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 123
+      y: 414
+      width: 20
+      height: 33
+    spriteID: f4e0418fd6adfdd408d88c296f52f70b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 123, y: 414}
+  - name: Animated_Horus_Frame_49
+    originalName: 
+    pivot: {x: 0.45, y: -0.03030303}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 123
+      y: 455
+      width: 20
+      height: 33
+    spriteID: 603004373cbd14648914c3dee591d278
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 123, y: 455}
+  - name: Animated_Horus_Frame_50
+    originalName: 
+    pivot: {x: 0.45, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 151
+      y: 125
+      width: 20
+      height: 32
+    spriteID: 7a877b8af05d7124c83b07a58abcad29
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 151, y: 125}
+  - name: Animated_Horus_Frame_51
+    originalName: 
+    pivot: {x: 0.45, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 151
+      y: 4
+      width: 20
+      height: 33
+    spriteID: 6607fcc62e587c4429e2fe1819a7b60b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 151, y: 4}
+  spriteSheetImportData: []
+  asepriteLayers:
+  - layerIndex: 0
+    guid: -666591941
+    name: Animated_Horus
+    layerFlags: 0
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: Animated_Horus_Frame_0
+      frameIndex: 0
+      cellRect:
+        x: 0
+        y: 1
+        width: 30
+        height: 32
+      spriteId: 53e03d4dc4ffa3e44bafedb439984296
+    - name: Animated_Horus_Frame_1
+      frameIndex: 1
+      cellRect:
+        x: 0
+        y: 1
+        width: 30
+        height: 32
+      spriteId: 46939a91af7ebbf4d96580bcf6abdcfb
+    - name: Animated_Horus_Frame_2
+      frameIndex: 2
+      cellRect:
+        x: 0
+        y: 1
+        width: 30
+        height: 32
+      spriteId: 9edc3429a97c79d45b24dcf4ba50426a
+    - name: Animated_Horus_Frame_3
+      frameIndex: 3
+      cellRect:
+        x: 0
+        y: 1
+        width: 30
+        height: 32
+      spriteId: 402f5df3d64948643950754a1ce412f1
+    - name: Animated_Horus_Frame_4
+      frameIndex: 4
+      cellRect:
+        x: 8
+        y: 1
+        width: 30
+        height: 32
+      spriteId: 564ad81f2725f3043b227f329ffdacc9
+    - name: Animated_Horus_Frame_5
+      frameIndex: 5
+      cellRect:
+        x: 8
+        y: 1
+        width: 30
+        height: 32
+      spriteId: 6f5b5845c549b4045b9c11098abc1c28
+    - name: Animated_Horus_Frame_6
+      frameIndex: 6
+      cellRect:
+        x: 8
+        y: 1
+        width: 30
+        height: 32
+      spriteId: 91dba151a0cf7604faaaa64a14dde7ba
+    - name: Animated_Horus_Frame_7
+      frameIndex: 7
+      cellRect:
+        x: 8
+        y: 1
+        width: 30
+        height: 32
+      spriteId: 3e3d41a24e30c034097deb0ad32c9848
+    - name: Animated_Horus_Frame_8
+      frameIndex: 8
+      cellRect:
+        x: 9
+        y: 1
+        width: 20
+        height: 33
+      spriteId: 95e5fbc5e8663dc46b469c3b8a561d0c
+    - name: Animated_Horus_Frame_9
+      frameIndex: 9
+      cellRect:
+        x: 9
+        y: 1
+        width: 20
+        height: 33
+      spriteId: 7895f63b413e57b459de7b62464231cc
+    - name: Animated_Horus_Frame_10
+      frameIndex: 10
+      cellRect:
+        x: 9
+        y: 1
+        width: 20
+        height: 33
+      spriteId: 586d7ba6943c9f2439abdd13dc04c95d
+    - name: Animated_Horus_Frame_11
+      frameIndex: 11
+      cellRect:
+        x: 9
+        y: 1
+        width: 20
+        height: 33
+      spriteId: 57a8f582ab0dc004784764746a44ad8e
+    - name: Animated_Horus_Frame_12
+      frameIndex: 12
+      cellRect:
+        x: 10
+        y: 1
+        width: 20
+        height: 33
+      spriteId: 0575eb00c12770d4b8b2244d86746e2c
+    - name: Animated_Horus_Frame_13
+      frameIndex: 13
+      cellRect:
+        x: 10
+        y: 1
+        width: 20
+        height: 32
+      spriteId: 4f6c2e0ae256ff74eb4849039ed2362b
+    - name: Animated_Horus_Frame_14
+      frameIndex: 14
+      cellRect:
+        x: 8
+        y: 1
+        width: 30
+        height: 32
+      spriteId: 326bca0d3862b6040a8fcc6aa84bd8ea
+    - name: Animated_Horus_Frame_15
+      frameIndex: 15
+      cellRect:
+        x: 1
+        y: 1
+        width: 37
+        height: 31
+      spriteId: 8a8bafbc520594c458770a31e1e10e82
+    - name: Animated_Horus_Frame_16
+      frameIndex: 16
+      cellRect:
+        x: 2
+        y: 1
+        width: 36
+        height: 31
+      spriteId: d0b3280954cf2bf40b06103a89cee6cd
+    - name: Animated_Horus_Frame_17
+      frameIndex: 17
+      cellRect:
+        x: 1
+        y: 1
+        width: 37
+        height: 32
+      spriteId: a55b6291dea87da4da58fa73b5f77c3a
+    - name: Animated_Horus_Frame_18
+      frameIndex: 18
+      cellRect:
+        x: 8
+        y: 1
+        width: 30
+        height: 32
+      spriteId: dcd4352c48473174992b112f16821c78
+    - name: Animated_Horus_Frame_19
+      frameIndex: 19
+      cellRect:
+        x: 0
+        y: 1
+        width: 30
+        height: 32
+      spriteId: bcce9bcef0df78245a825dc6abdeba2e
+    - name: Animated_Horus_Frame_20
+      frameIndex: 20
+      cellRect:
+        x: 0
+        y: 1
+        width: 37
+        height: 31
+      spriteId: de897f094886d1f4a824f24ad66fd39a
+    - name: Animated_Horus_Frame_21
+      frameIndex: 21
+      cellRect:
+        x: 0
+        y: 1
+        width: 36
+        height: 31
+      spriteId: 9d698ae865ab6974cae333ec7a30a85e
+    - name: Animated_Horus_Frame_22
+      frameIndex: 22
+      cellRect:
+        x: 0
+        y: 1
+        width: 37
+        height: 32
+      spriteId: cd2df309aa2a7a34c893cff6ad1027e9
+    - name: Animated_Horus_Frame_23
+      frameIndex: 23
+      cellRect:
+        x: 0
+        y: 1
+        width: 30
+        height: 32
+      spriteId: 7c97582ea0125f240bda8401c06f160a
+    - name: Animated_Horus_Frame_24
+      frameIndex: 24
+      cellRect:
+        x: 9
+        y: 1
+        width: 20
+        height: 33
+      spriteId: b7d14bc2f0c6809429b8f975457069c9
+    - name: Animated_Horus_Frame_25
+      frameIndex: 25
+      cellRect:
+        x: 5
+        y: 1
+        width: 24
+        height: 33
+      spriteId: 556bc712c29e06d4a925255b9b7711f3
+    - name: Animated_Horus_Frame_26
+      frameIndex: 26
+      cellRect:
+        x: 0
+        y: 0
+        width: 29
+        height: 33
+      spriteId: 12baa88d8d61dad49a09c9ee0f5e23be
+    - name: Animated_Horus_Frame_27
+      frameIndex: 27
+      cellRect:
+        x: 7
+        y: 1
+        width: 22
+        height: 31
+      spriteId: 265980aa7411f804da8df74a3f217a15
+    - name: Animated_Horus_Frame_28
+      frameIndex: 28
+      cellRect:
+        x: 9
+        y: 1
+        width: 22
+        height: 32
+      spriteId: 506159218e361bf498937d36a6c2d77f
+    - name: Animated_Horus_Frame_29
+      frameIndex: 29
+      cellRect:
+        x: 10
+        y: 1
+        width: 28
+        height: 32
+      spriteId: 1be2012dadd1f0444b9943ff66b74071
+    - name: Animated_Horus_Frame_30
+      frameIndex: 30
+      cellRect:
+        x: 3
+        y: 1
+        width: 32
+        height: 31
+      spriteId: f491cec4fa7ba7844a77a65ab63cb0a8
+    - name: Animated_Horus_Frame_31
+      frameIndex: 31
+      cellRect:
+        x: 0
+        y: 1
+        width: 28
+        height: 32
+      spriteId: d1b2887e4cc76184397396d5628b19e4
+    - name: Animated_Horus_Frame_32
+      frameIndex: 32
+      cellRect:
+        x: 8
+        y: 1
+        width: 30
+        height: 32
+      spriteId: a7da40ff919063e488cb72e4f1ba9ac2
+    - name: Animated_Horus_Frame_33
+      frameIndex: 33
+      cellRect:
+        x: 8
+        y: 1
+        width: 30
+        height: 32
+      spriteId: 8aaf46b90b1263d47aef7ec11cc35679
+    - name: Animated_Horus_Frame_34
+      frameIndex: 34
+      cellRect:
+        x: 10
+        y: 1
+        width: 28
+        height: 31
+      spriteId: bac2ab6917411c344ac7bad8788503b6
+    - name: Animated_Horus_Frame_35
+      frameIndex: 35
+      cellRect:
+        x: 11
+        y: 1
+        width: 27
+        height: 32
+      spriteId: dcbf5d88fd5e7e242b50bc6f2e739bfc
+    - name: Animated_Horus_Frame_36
+      frameIndex: 36
+      cellRect:
+        x: 0
+        y: 1
+        width: 30
+        height: 32
+      spriteId: 9fe04a75e7cccce4abb0ed0edb71393c
+    - name: Animated_Horus_Frame_37
+      frameIndex: 37
+      cellRect:
+        x: 0
+        y: 1
+        width: 30
+        height: 32
+      spriteId: 869f93d5332a9484c913e48b7e85cf78
+    - name: Animated_Horus_Frame_38
+      frameIndex: 38
+      cellRect:
+        x: 0
+        y: 1
+        width: 28
+        height: 31
+      spriteId: d8ae9c20e2568f343b7ae763dbe2dba1
+    - name: Animated_Horus_Frame_39
+      frameIndex: 39
+      cellRect:
+        x: 0
+        y: 1
+        width: 27
+        height: 32
+      spriteId: c54e118f3213e084ba589ed01b414e4c
+    - name: Animated_Horus_Frame_40
+      frameIndex: 40
+      cellRect:
+        x: 9
+        y: 1
+        width: 20
+        height: 33
+      spriteId: 680f474349d60074aba4addac922111a
+    - name: Animated_Horus_Frame_41
+      frameIndex: 41
+      cellRect:
+        x: 9
+        y: 0
+        width: 20
+        height: 33
+      spriteId: 7b30e7eccc0d18145a00ddd625e76ff1
+    - name: Animated_Horus_Frame_42
+      frameIndex: 42
+      cellRect:
+        x: 9
+        y: 0
+        width: 20
+        height: 34
+      spriteId: 269963090298d774b8937904d082735e
+    - name: Animated_Horus_Frame_43
+      frameIndex: 43
+      cellRect:
+        x: 9
+        y: 1
+        width: 20
+        height: 33
+      spriteId: ed7fae9627aa32d4ea1263c1ff6fd02b
+    - name: Animated_Horus_Frame_44
+      frameIndex: 44
+      cellRect:
+        x: 9
+        y: 0
+        width: 20
+        height: 33
+      spriteId: 73ae3563bc45c894b8a612844a9bc890
+    - name: Animated_Horus_Frame_45
+      frameIndex: 45
+      cellRect:
+        x: 9
+        y: 0
+        width: 20
+        height: 34
+      spriteId: 149640d27bdafb4448799a9bfa468719
+    - name: Animated_Horus_Frame_46
+      frameIndex: 46
+      cellRect:
+        x: 10
+        y: 1
+        width: 20
+        height: 33
+      spriteId: 7c5b6b735cbe47f4a92a268ae9c421ff
+    - name: Animated_Horus_Frame_47
+      frameIndex: 47
+      cellRect:
+        x: 10
+        y: 0
+        width: 20
+        height: 32
+      spriteId: d8cbf09618f6fbb4bb4be675a98f65a3
+    - name: Animated_Horus_Frame_48
+      frameIndex: 48
+      cellRect:
+        x: 10
+        y: 0
+        width: 20
+        height: 33
+      spriteId: f4e0418fd6adfdd408d88c296f52f70b
+    - name: Animated_Horus_Frame_49
+      frameIndex: 49
+      cellRect:
+        x: 10
+        y: 1
+        width: 20
+        height: 33
+      spriteId: 603004373cbd14648914c3dee591d278
+    - name: Animated_Horus_Frame_50
+      frameIndex: 50
+      cellRect:
+        x: 10
+        y: 0
+        width: 20
+        height: 32
+      spriteId: 7a877b8af05d7124c83b07a58abcad29
+    - name: Animated_Horus_Frame_51
+      frameIndex: 51
+      cellRect:
+        x: 10
+        y: 0
+        width: 20
+        height: 33
+      spriteId: 6607fcc62e587c4429e2fe1819a7b60b
+    linkedCells: []
+    parentIndex: -1
+  platformSettings: []
+  secondarySpriteTextures: []
+  spritePackingTag: 
+  canvasSize: {x: 38, y: 34}
