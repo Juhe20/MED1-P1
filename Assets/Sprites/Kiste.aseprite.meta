@@ -130,7 +130,7 @@ ScriptedImporter:
       y: 44
       width: 18
       height: 32
-    spriteID: 2b475f61f921f9c4d91ce50243edcec0
+    spriteID: c632aad154aa97a4ea9db37023b2499e
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -150,7 +150,7 @@ ScriptedImporter:
       y: 4
       width: 27
       height: 32
-    spriteID: a6f4fd8e0cfb41648a9a6c3808e0949f
+    spriteID: ecdcbf2d291366340af5daaa7c2b0e6c
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -170,7 +170,7 @@ ScriptedImporter:
       y: 84
       width: 18
       height: 32
-    spriteID: 10644361254db5640aa89edf4bec3287
+    spriteID: e912889f5d3135e479e149d9d4a667d7
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -195,7 +195,7 @@ ScriptedImporter:
         y: 0
         width: 18
         height: 32
-      spriteId: 2b475f61f921f9c4d91ce50243edcec0
+      spriteId: c632aad154aa97a4ea9db37023b2499e
     - name: Kiste_Frame_1
       frameIndex: 1
       cellRect:
@@ -203,7 +203,7 @@ ScriptedImporter:
         y: 0
         width: 27
         height: 32
-      spriteId: a6f4fd8e0cfb41648a9a6c3808e0949f
+      spriteId: ecdcbf2d291366340af5daaa7c2b0e6c
     - name: Kiste_Frame_2
       frameIndex: 2
       cellRect:
@@ -211,7 +211,7 @@ ScriptedImporter:
         y: 0
         width: 18
         height: 32
-      spriteId: 10644361254db5640aa89edf4bec3287
+      spriteId: e912889f5d3135e479e149d9d4a667d7
     linkedCells: []
     parentIndex: -1
   platformSettings: []
