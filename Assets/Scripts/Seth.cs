@@ -30,7 +30,15 @@ public class Seth : MonoBehaviour
 	public GameObject bulletPrefab;
 	public GameObject bulletParent;
 
-	void Start()
+    [SerializeField] private AudioSource NASUSHAHSoundEffect;
+
+    [SerializeField] private AudioSource HAHA;
+
+    [SerializeField] private AudioSource Taunt;
+
+
+
+    void Start()
 	{
 		animator = GetComponent<Animator>();
 		myRigidbody = GetComponent<Rigidbody2D>();
@@ -53,6 +61,7 @@ public class Seth : MonoBehaviour
 		
 		if (moving)
 		{
+			Taunt.Play();
 			animator.SetBool("isAttacking", false);
 			animator.SetBool("isWalking", true);
 
@@ -68,6 +77,7 @@ public class Seth : MonoBehaviour
 			combatRange = Vector2.Distance(transform.position, player.transform.position);
 			if (combatRange <= meleeRange)
 			{
+				
 				animator.SetBool("isWalking", false);
 				animator.SetBool("isAttacking", true);
 				MeleeAttack();
@@ -112,16 +122,19 @@ public class Seth : MonoBehaviour
 			damage = 2;
 			StartCoroutine(CoolDown());
 			GameController.DamagePlayer(damage);
-			Debug.Log("Av");
-		}
+            NASUSHAHSoundEffect.Play();
+        }
 	}
 
 	void RangedAttack()
 	{
 		Instantiate(bulletPrefab, bulletParent.transform.position, Quaternion.identity);
-		StartCoroutine(CoolDown());
+        HAHA.Play();
+        StartCoroutine(CoolDown());
 		shotCounter++;
-	}
+
+
+    }
 
 	private IEnumerator CoolDown()
 	{
