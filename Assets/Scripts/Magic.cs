@@ -10,7 +10,6 @@ public class Magic : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
         transform.position += transform.right * Time.deltaTime * speed;
 
 
@@ -19,7 +18,6 @@ public class Magic : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         Bullet.Play();
-
         Destroy(gameObject);
         float danmage = GameController.Damage;
         
