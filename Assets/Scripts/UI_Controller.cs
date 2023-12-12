@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class UI_Controller : MonoBehaviour
 {
+   
     public GameObject tabletsCollectedWindow;
     public TextMeshProUGUI tabletsCollectedText;
     private static int inDialogue = 0;
@@ -144,6 +145,7 @@ public class UI_Controller : MonoBehaviour
 
     public void StartBoonDialogue() //Sets boon dialogue window active and uses arrays of boon, character names and portrait to determine what the window shows.
     {
+        
         boonDialogue.SetActive(true);
         nameText.SetText(characterNames[GameController.GodDialogue]);
         imageContainer.sprite = (characterPortrait[GameController.GodDialogue]);

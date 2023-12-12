@@ -43,6 +43,7 @@ public class Boon : MonoBehaviour
                 GameController.reviveSet(revive);
                 gameObject.SetActive(false);
                 Time.timeScale = 0;
+                
 
             }
         }

@@ -4,12 +4,13 @@ using UnityEngine;
 
 public class Magic : MonoBehaviour
 {
-    [SerializeField] AudioSource Bullet;
+    [SerializeField] private AudioSource Bullet;
     public float speed = 1f;
 
     // Update is called once per frame
     void Update()
     {
+        Bullet.Play();
         transform.position += transform.right * Time.deltaTime * speed;
     }
 
@@ -21,8 +22,7 @@ public class Magic : MonoBehaviour
         Destroy(gameObject);
 
         if (collision.gameObject.CompareTag("Enemy"))
-        {
-            Bullet.Play();
+        {          
             collision.gameObject.GetComponent<EnemyController>().DamageEnemy(danmage+2);
         }
     }
