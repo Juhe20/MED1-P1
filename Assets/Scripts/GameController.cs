@@ -107,6 +107,7 @@ public class GameController : MonoBehaviour
         damage = 1.0f;
         currentlyCollectedTablets = 0;
         collectedTablets = 0;
+        NextLevel.NextScene = 0;
     }
 
 

@@ -70,6 +70,7 @@ public class UI_Controller : MonoBehaviour
         {
             if (inDialogue == 5 || InDialogue == 2 && GameController.CurrentlyCollectedTablets == 0)
             {
+                Time.timeScale = 0;
                 tabletsCollectedWindow.SetActive(true); //Sets window with text active. Shows the amount of tablets collected in the sentence.
                 tabletsCollectedText.SetText("I found the door to Seth's chamber." +
                     System.Environment.NewLine + "I have only collected" + " " + GameController.CurrentlyCollectedTablets + " " + "out of 2 of my father's stone tablets." +
@@ -81,6 +82,7 @@ public class UI_Controller : MonoBehaviour
         {
             if (inDialogue == 1)
             {
+                Time.timeScale = 0;
                 tabletsCollectedWindow.SetActive(true);
                 tabletsCollectedText.SetText("I found the stairs to the next level." +
                     System.Environment.NewLine + "I have only collected" + " " + GameController.CollectedTablets + " " + "out of 2 of my father's stone tablets." +
@@ -102,7 +104,7 @@ public class UI_Controller : MonoBehaviour
             }
             if (Input.GetKeyDown(KeyCode.Space)) //Sets window inactive if space is clicked.
             {
-
+                Time.timeScale = 1;
                 tabletsCollectedWindow.SetActive(false);
                 inDialogue = 3;
             }

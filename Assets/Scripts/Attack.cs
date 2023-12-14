@@ -35,8 +35,6 @@ public class Attack : MonoBehaviour
         {
 
             meleeAttack();
-            Debug.Log(Input.mousePosition.x - Screen.width / 2);
-            Debug.Log(Input.mousePosition.y - Screen.height / 2);
 
             body.GetComponent<Animator>().SetBool("Attacking", true);
 

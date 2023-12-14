@@ -13,12 +13,12 @@ public class NextLevel : MonoBehaviour
     //or have already collided with the stair once 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Player")) 
+        if (collision.gameObject.CompareTag("Player"))
         {
-            if (UI_Controller.InDialogue == 0 && GameController.CollectedTablets == 2 || 
-                UI_Controller.InDialogue == 1 && GameController.CollectedTablets == 4 || 
+            if (UI_Controller.InDialogue == 0 && GameController.CurrentlyCollectedTablets == 2 ||
+                UI_Controller.InDialogue == 4 && GameController.CurrentlyCollectedTablets == 2 ||
                 UI_Controller.InDialogue == 3 ||
-                UI_Controller.InDialogue == 5) 
+                UI_Controller.InDialogue == 1)
             {
                 nextScene += 1;
                 SceneManager.LoadScene(nextScene);

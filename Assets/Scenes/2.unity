@@ -111073,7 +111073,7 @@ MonoBehaviour:
   Stair: {fileID: 2013976360779564285, guid: 02399fa1d1e48374f8e0f479079d8bd1, type: 3}
   spawnPoints:
   - {x: 1, y: 26}
-  - {x: 21, y: 15}
+  - {x: 21, y: 14.5}
   - {x: -19, y: 11}
 --- !u!4 &1042498822
 Transform:
