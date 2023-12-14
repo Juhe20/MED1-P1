@@ -108,6 +108,7 @@ public class GameController : MonoBehaviour
         currentlyCollectedTablets = 0;
         collectedTablets = 0;
         NextLevel.NextScene = 0;
+        UI_Controller.InDialogue = 0;
     }
 
 
