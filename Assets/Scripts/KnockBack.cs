@@ -1,17 +1,14 @@
-using System;
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class KnockBack : MonoBehaviour
 {
     public float thrust;
     public float knockTime;
-    float danmage = GameController.Damage;
+    float damage = GameController.Damage;
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        
         if (other.gameObject.CompareTag("Enemy"))
         {
             Rigidbody2D Enemy = other.GetComponent<Rigidbody2D>();
@@ -30,7 +27,7 @@ public class KnockBack : MonoBehaviour
     {
         if (Enemy != null)
         {
-            Enemy.gameObject.GetComponent<EnemyController>().DamageEnemy(danmage);
+            Enemy.gameObject.GetComponent<EnemyController>().DamageEnemy(damage);
             yield return new WaitForSeconds(knockTime);
             Enemy.velocity = Vector2.zero;
             Enemy.isKinematic = true;

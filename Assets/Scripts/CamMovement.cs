@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class CamMovement : MonoBehaviour
@@ -7,15 +5,11 @@ public class CamMovement : MonoBehaviour
     public Transform player;
     public Vector3 offset;
     public float speed;
-    void Start()
-    {
-        
-    }
 
-    
     void Update()
     {
+        //Sets the camera's position to the player's position. Offset can be set in Unity's inspector.
         Vector3 desiredPos = player.position + offset;
-        transform.position = Vector3.Lerp(transform.position, desiredPos, speed*Time.deltaTime);
+        transform.position = Vector3.Lerp(transform.position, desiredPos, speed * Time.deltaTime);
     }
 }
