@@ -11,7 +11,6 @@ public class EnemyMovement : MonoBehaviour
     private bool Hit = false;
     public int enemyDamage = 2;
     private float distance;
-    [SerializeField] private float attackSpeed = 1f;
     [SerializeField] private AudioSource PlayerDamage;
 
     private void Start()
