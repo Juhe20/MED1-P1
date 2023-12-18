@@ -2,15 +2,10 @@ using UnityEngine;
 
 public class Boon : MonoBehaviour
 {
-    public string Name;
-    public string Description;
-    public Sprite Image;
     private static bool boonCollision = false;
-    private static int boonsCollected = 0;
-    public static int BoonsCollected { get => boonsCollected; set => boonsCollected = value; }
     public static bool BoonCollision { get => boonCollision; set => boonCollision = value; }
-    
 
+    //These values are all changed in Unity's inspector window.
     public int healthChange;
     public float speedChange;
     public int manaChange;
@@ -18,22 +13,14 @@ public class Boon : MonoBehaviour
     public int shieldSize;
     public bool revive;
 
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        GetComponent<SpriteRenderer>().sprite = Image;
-    }
-
-    // Update is called once per frame
     private void OnCollisionStay2D(Collision2D collision)
     {
-
+        //Calls all the boon methods from the Game Controller scipt when the player clicks "e" on a boon.
+        //Only uses the input values set in the Unity inspector window for that specific boon object. Time scale pauses the game.
         if (collision.gameObject.CompareTag("Player"))
         {
             if (Input.GetKey("e"))
             {
-                boonsCollected++;
                 BoonCollision = true;
                 GameController.HealPlayer(healthChange);
                 GameController.Manachange(manaChange);
@@ -43,8 +30,6 @@ public class Boon : MonoBehaviour
                 GameController.reviveSet(revive);
                 gameObject.SetActive(false);
                 Time.timeScale = 0;
-                
-
             }
         }
     }

@@ -9,7 +9,8 @@ public class TabletCollision : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            if (Input.GetKey("e")) //Updates variables for other scripts when clicking the stone tablet.
+            //Updates variables for other scripts when clicking the stone tablet. Timescale freezes the game.
+            if (Input.GetKey("e")) 
             {
                 GameController.CollectedTablets++;
                 GameController.CurrentlyCollectedTablets++;
@@ -18,8 +19,6 @@ public class TabletCollision : MonoBehaviour
                 gameObject.SetActive(false);
                 Time.timeScale = 0;
             }
-
         }
-
     }
 }

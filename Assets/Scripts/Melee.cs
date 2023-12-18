@@ -6,21 +6,14 @@ public class Melee : MonoBehaviour
 {
     [SerializeField] private AudioSource EnemyDamage;
 
-
-
     private void OnCollisionEnter2D(Collision2D collision)
-
-
     {
-        
-
-        float danmage = GameController.Damage;
-
+        float damage = GameController.Damage;
         if (collision.gameObject.CompareTag("Enemy"))
         {
+            //Deals damage if meleePoint is colliding with an enemy when set active from the player script.
             EnemyDamage.Play();
-   
-            collision.gameObject.GetComponent<EnemyController>().DamageEnemy(danmage);
+            collision.gameObject.GetComponent<EnemyController>().DamageEnemy(damage);
         }
     }
 }

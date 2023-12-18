@@ -1,9 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
-using System.Security.Cryptography;
 using UnityEngine;
-using UnityEngine.SceneManagement;
-using UnityEngine.UIElements;
 
 public class StoneTablet : MonoBehaviour
 {
@@ -13,6 +8,7 @@ public class StoneTablet : MonoBehaviour
     int randomSpawnPoint2;
     int i = 0;
 
+    //Only spawns tablets once per scene.
     private void Start()
     {
         TabletSpawner();
@@ -20,7 +16,8 @@ public class StoneTablet : MonoBehaviour
 
     void TabletSpawner()
     {
-        while (i == 0) //Opdaterer i til 1 så snart den har spawnet 2 tablets på 2 forskellige spawnpoints.
+        //Keeps running a while loop until 2 different random spawnpoints are found. Increments i to stop the loop whenever they are different.
+        while (i == 0)
         {
             randomSpawnPoint = Random.Range(0, spawnPoints.Length);
             randomSpawnPoint2 = Random.Range(0, spawnPoints.Length);

@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class UI_Controller : MonoBehaviour
 {
-   
+
     public GameObject tabletsCollectedWindow;
     public TextMeshProUGUI tabletsCollectedText;
     private static int inDialogue = 0;
@@ -18,7 +18,6 @@ public class UI_Controller : MonoBehaviour
     float fillhealth;
     public GameObject Manabar;
     float fillmana;
-    private int tabletSentenceIndex = 0;
     public TextMeshProUGUI tabletText;
     public GameObject Seth;
 
@@ -35,13 +34,13 @@ public class UI_Controller : MonoBehaviour
 
     void Update()
     {
-        if (TabletCollision.TabletCollide) //Checks if you've collided with a tablet and starts the dialogue. Turns it off again when clicking space.
+        //Checks if you've collided with a tablet and starts the dialogue. Turns it off again when clicking space.
+        if (TabletCollision.TabletCollide)
         {
             StartTabletDialogue();
             if (Input.GetKeyDown(KeyCode.Space))
             {
                 TabletCollision.TabletCollide = false;
-               
                 Time.timeScale = 1;
             }
         }
@@ -50,8 +49,8 @@ public class UI_Controller : MonoBehaviour
             Dialoguepanel.SetActive(false);
         }
 
-
-        if (Boon.BoonCollision) //Checks which boon you've collided with and starts the dialogue. Turns it off again when clicking space.
+        //Checks which boon you've collided with and starts the dialogue. Turns it off again when clicking space.
+        if (Boon.BoonCollision)
         {
             StartBoonDialogue();
             if (Input.GetKeyDown(KeyCode.Space))
@@ -66,7 +65,8 @@ public class UI_Controller : MonoBehaviour
             boonDialogue.SetActive(false);
         }
 
-        if (NextLevel.NextScene == 1) //Checks what floor you're on and a variable to check if you've collected all tablets yet.
+        //Checks what floor you're on and a variable to check if you've collected all tablets yet.
+        if (NextLevel.NextScene == 1)
         {
             if (inDialogue == 5 || InDialogue == 2 && GameController.CurrentlyCollectedTablets == 0)
             {
@@ -76,8 +76,9 @@ public class UI_Controller : MonoBehaviour
                     System.Environment.NewLine + "I have only collected" + " " + GameController.CurrentlyCollectedTablets + " " + "out of 2 of my father's stone tablets." +
                     System.Environment.NewLine + "I should consider finding the rest before heading into the final battle.");
             }
-
         }
+
+        //Checks what floor you're on and a variable to check if you've collected all tablets yet.
         else if (NextLevel.NextScene == 0)
         {
             if (inDialogue == 1)
@@ -87,42 +88,41 @@ public class UI_Controller : MonoBehaviour
                 tabletsCollectedText.SetText("I found the stairs to the next level." +
                     System.Environment.NewLine + "I have only collected" + " " + GameController.CollectedTablets + " " + "out of 2 of my father's stone tablets." +
                     System.Environment.NewLine + "I should consider finding the rest before going up the stairs.");
-
             }
-
         }
         else
         {
             tabletsCollectedWindow.SetActive(false);
         }
-        if (tabletsCollectedWindow.activeInHierarchy) //Checks if the dialogue window is active after colliding with the stairs.
+
+        //Checks if the dialogue window is active after colliding with the stairs.
+        if (tabletsCollectedWindow.activeInHierarchy)
         {
-            if (GameController.Health <= 0) //Sets window inactive if player dies.
+            //Sets window inactive if player dies.
+            if (GameController.Health <= 0)
             {
                 tabletsCollectedWindow.SetActive(false);
                 inDialogue = 0;
             }
-            if (Input.GetKeyDown(KeyCode.Space)) //Sets window inactive if space is clicked.
+            //Sets window inactive if space is clicked.
+            if (Input.GetKeyDown(KeyCode.Space))
             {
                 Time.timeScale = 1;
                 tabletsCollectedWindow.SetActive(false);
                 inDialogue = 3;
             }
         }
-        
-        if(NextLevel.NextScene == 2)
+
+        if (NextLevel.NextScene == 2)
         {
-            if (!Seth.activeInHierarchy) //Checks if Seth is active or not and displays the victory dialogue if he's inactive.
+            //Checks if Seth is active or not and displays the victory dialogue if he's inactive.
+            if (!Seth.activeInHierarchy)
             {
                 Dialoguepanel.SetActive(true);
-                nameText.SetText(characterNames[6]); 
+                nameText.SetText(characterNames[6]);
                 tabletText.SetText(tabletSentences[0]);
             }
-
         }
-
-
-
 
         //Health UI update
         fillhealth = (float)GameController.Health;
@@ -133,21 +133,19 @@ public class UI_Controller : MonoBehaviour
         fillmana = (float)GameController.Mana;
         fillmana = fillmana / GameController.MaxMana;
         Manabar.GetComponent<Image>().fillAmount = fillmana;
-
-
     }
 
-    public void StartTabletDialogue() //Sets tablet dialogue window active and uses an array of character names and dialogue text to determine what the window shows.
+    //Sets tablet dialogue window active and uses an array of character names and dialogue text to determine what the window shows.
+    public void StartTabletDialogue()
     {
         Dialoguepanel.SetActive(true);
         nameText.SetText(characterNames[6]);
-        tabletSentenceIndex = (GameController.CollectedTablets) % tabletSentences.Length;
-        tabletText.SetText(tabletSentences[tabletSentenceIndex]);
+        tabletText.SetText(tabletSentences[GameController.CollectedTablets]);
     }
 
-    public void StartBoonDialogue() //Sets boon dialogue window active and uses arrays of boon, character names and portrait to determine what the window shows.
+    //Sets boon dialogue window active and uses arrays of boon, character names and portrait to determine what the window shows.
+    public void StartBoonDialogue()
     {
-        
         boonDialogue.SetActive(true);
         nameText.SetText(characterNames[GameController.GodDialogue]);
         imageContainer.sprite = (characterPortrait[GameController.GodDialogue]);
