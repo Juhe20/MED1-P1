@@ -22,7 +22,12 @@ public class Attack : MonoBehaviour
         body.GetComponent<Animator>().GetBool("Attacking");
     }
 
-    // Update is called once per frame
+    private void SetAnimation(int attackX, int attackY)
+    {
+        body.GetComponent<Animator>().SetFloat("AttackX", attackX);
+        body.GetComponent<Animator>().SetFloat("AttackY", attackY);
+    }
+
     void Update()
     {
         mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
@@ -36,23 +41,19 @@ public class Attack : MonoBehaviour
 
             if (Input.mousePosition.x - Screen.width / 2 > 0 && Input.mousePosition.y - Screen.height / 2 < 60 && Input.mousePosition.y - Screen.height / 2 > -113)
             {
-                body.GetComponent<Animator>().SetFloat("AttackX", 1);
-                body.GetComponent<Animator>().SetFloat("AttackY", 0);
+                SetAnimation(1, 0);
             }
             if (Input.mousePosition.x - Screen.width / 2 < 0 && Input.mousePosition.y - Screen.height / 2 > -60 && Input.mousePosition.y - Screen.height / 2 < 113)
             {
-                body.GetComponent<Animator>().SetFloat("AttackX", -1);
-                body.GetComponent<Animator>().SetFloat("AttackY", 0);
+                SetAnimation(-1, 0);
             }
             if (Input.mousePosition.y - Screen.height / 2 < 0 && Input.mousePosition.x - Screen.width / 2 > -220 && Input.mousePosition.x - Screen.width / 2 < -200)
             {
-                body.GetComponent<Animator>().SetFloat("AttackY", -1);
-                body.GetComponent<Animator>().SetFloat("AttackX", 0);
+                SetAnimation(0, -1);
             }
             if (Input.mousePosition.y - Screen.height / 2 > 0)
             {
-                body.GetComponent<Animator>().SetFloat("AttackY", 1);
-                body.GetComponent<Animator>().SetFloat("AttackX", 0);
+                SetAnimation(0, 1);
             }
         }
 
@@ -73,7 +74,6 @@ public class Attack : MonoBehaviour
         if (!isAttacking)
         {
             HitSoundEffect.Play();
-
             MeleePrefab.SetActive(true);
             isAttacking = true;
         }
