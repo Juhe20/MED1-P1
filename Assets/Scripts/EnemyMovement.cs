@@ -30,9 +30,6 @@ public class EnemyMovement : MonoBehaviour
     {
         //Measures length between enemy and player.
         distance = Vector2.Distance(transform.position, player.transform.position);
-        Vector2 direction = player.transform.position - transform.position;
-        direction.Normalize();
-
 
         if (distance < distanceBetween)
         {
