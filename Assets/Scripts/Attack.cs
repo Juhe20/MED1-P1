@@ -8,12 +8,10 @@ public class Attack : MonoBehaviour
     public GameObject magicPrefab;
     public GameObject MeleePrefab;
     public Camera cam;
-
     Vector2 mousePosition;
     float magicForce = 10f;
     float attackDuration = 0.5f;
     float attackTimer = 0f;
-
     bool isAttacking = false;
     [SerializeField] private AudioSource HitSoundEffect;
 
@@ -24,45 +22,42 @@ public class Attack : MonoBehaviour
         body.GetComponent<Animator>().GetBool("Attacking");
     }
 
-    // Update is called once per frame
+    private void SetAnimation(int attackX, int attackY)
+    {
+        body.GetComponent<Animator>().SetFloat("AttackX", attackX);
+        body.GetComponent<Animator>().SetFloat("AttackY", attackY);
+    }
+
     void Update()
     {
-
         mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         CheckAttackTimer();
 
+        //Uses left mouse button check the mouse position and trigger an attack and corresponding animations.
         if (Input.GetButtonDown("Fire1"))
         {
-
             meleeAttack();
-            Debug.Log(Input.mousePosition.x - Screen.width / 2);
-            Debug.Log(Input.mousePosition.y - Screen.height / 2);
-
             body.GetComponent<Animator>().SetBool("Attacking", true);
 
             if (Input.mousePosition.x - Screen.width / 2 > 0 && Input.mousePosition.y - Screen.height / 2 < 60 && Input.mousePosition.y - Screen.height / 2 > -113)
             {
-                body.GetComponent<Animator>().SetFloat("AttackX", 1);
-                body.GetComponent<Animator>().SetFloat("AttackY", 0);
+                SetAnimation(1, 0);
             }
             if (Input.mousePosition.x - Screen.width / 2 < 0 && Input.mousePosition.y - Screen.height / 2 > -60 && Input.mousePosition.y - Screen.height / 2 < 113)
             {
-                body.GetComponent<Animator>().SetFloat("AttackX", -1);
-                body.GetComponent<Animator>().SetFloat("AttackY", 0);
+                SetAnimation(-1, 0);
             }
             if (Input.mousePosition.y - Screen.height / 2 < 0 && Input.mousePosition.x - Screen.width / 2 > -220 && Input.mousePosition.x - Screen.width / 2 < -200)
             {
-                body.GetComponent<Animator>().SetFloat("AttackY", -1);
-                body.GetComponent<Animator>().SetFloat("AttackX", 0);
+                SetAnimation(0, -1);
             }
             if (Input.mousePosition.y - Screen.height / 2 > 0)
             {
-                body.GetComponent<Animator>().SetFloat("AttackY", 1);
-                body.GetComponent<Animator>().SetFloat("AttackX", 0);
+                SetAnimation(0, 1);
             }
-
         }
 
+        //Uses right mouse button to use mana and call the magic method, which instantiates the magic bullet.
         if (Input.GetButtonDown("Fire2"))
         {
             if (GameController.Mana > 0)
@@ -70,19 +65,17 @@ public class Attack : MonoBehaviour
                 GameController.Mana--;
                 castMagic();
             }
-
         }
     }
 
+    //Sets melee prefab active which is what measures if the player is in range of an enemy.
     void meleeAttack()
     {
         if (!isAttacking)
         {
             HitSoundEffect.Play();
-
             MeleePrefab.SetActive(true);
             isAttacking = true;
-
         }
     }
 

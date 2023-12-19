@@ -78632,6 +78632,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 884601082}
     - target: {fileID: 5835879577175340341, guid: c1909b166b99980499d09741e9f3e95c, type: 3}
+      propertyPath: AttackSoundEffect
+      value: 
+      objectReference: {fileID: 1666852495}
+    - target: {fileID: 5835879577175340341, guid: c1909b166b99980499d09741e9f3e95c, type: 3}
       propertyPath: rangedAttackRange
       value: 6
       objectReference: {fileID: 0}
@@ -78643,6 +78647,11 @@ PrefabInstance:
 --- !u!1 &1666852494 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 206515866427689505, guid: c1909b166b99980499d09741e9f3e95c, type: 3}
+  m_PrefabInstance: {fileID: 1666852493}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &1666852495 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 2948002848806127807, guid: c1909b166b99980499d09741e9f3e95c, type: 3}
   m_PrefabInstance: {fileID: 1666852493}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1790060006

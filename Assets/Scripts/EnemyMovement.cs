@@ -1,7 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
-using Unity.Burst.CompilerServices;
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class EnemyMovement : MonoBehaviour
@@ -12,117 +9,69 @@ public class EnemyMovement : MonoBehaviour
     public float AttackRange = 1.1f;
     public float Cooldown;
     private bool Hit = false;
-
     public int enemyDamage = 2;
-
     private float distance;
-    private float canAttack;
-    private Transform target;
-
-    [SerializeField] private float attackSpeed = 1f;
-
     [SerializeField] private AudioSource PlayerDamage;
+
     private void Start()
     {
         GetComponent<Animator>().GetFloat("MoveX");
         GetComponent<Animator>().GetFloat("MoveY");
-        GetComponent<SpriteRenderer>();
+    }
+
+    //Method for setting animations of the enemy. Only the snakes have animations so does not affect mummies.
+    private void SetAnimation(int xDirection, int yDirection)
+    {
+        GetComponent<Animator>().SetFloat("MoveX", xDirection);
+        GetComponent<Animator>().SetFloat("MoveY", yDirection);
     }
 
     void FixedUpdate()
     {
-        //Måler længden mellem enemy og player
-        distance = Vector2.Distance(transform.position,player.transform.position);
-        Vector2 direction = player.transform.position - transform.position;
-        direction.Normalize();
-        //Til at rotere enemy, Atan2 bruges til at finde vinkel mellem to punkter
-        
-        
+        //Measures length between enemy and player.
+        distance = Vector2.Distance(transform.position, player.transform.position);
 
         if (distance < distanceBetween)
         {
-            //Får enemy til at bevæge sig
-            transform.position =
-                Vector2.MoveTowards(this.transform.position, player.transform.position, speed * Time.deltaTime);
-
+            //Makes the enemy move if they are within a distanced determined in the Unity inspector.
+            transform.position = Vector2.MoveTowards(this.transform.position, player.transform.position, speed * Time.deltaTime);
             if (this.transform.position.x - player.transform.position.x > 0.5)
             {
-                GetComponent<Animator>().SetFloat("MoveX", 1);
-                GetComponent<Animator>().SetFloat("MoveY", 0);
+                SetAnimation(1, 0);
             }
-
-
             if (this.transform.position.x - player.transform.position.x < -0.5)
             {
-                GetComponent<Animator>().SetFloat("MoveX", -1);
-                GetComponent<Animator>().SetFloat("MoveY", 0);
+                SetAnimation(-1, 0);
             }
-
-
             if (this.transform.position.y - player.transform.position.y > 0.5)
             {
-                GetComponent<Animator>().SetFloat("MoveX", 0);
-                GetComponent<Animator>().SetFloat("MoveY", 1);
+                SetAnimation(0, 1);
             }
-
             if (this.transform.position.y - player.transform.position.y < -0.5)
             {
-                GetComponent<Animator>().SetFloat("MoveX", 0);
-                GetComponent<Animator>().SetFloat("MoveY", -1);
+                SetAnimation(0, -1);
             }
-
-
-
         }
 
+        //Uses attack method if within attack range of the player.
         if (Vector3.Distance(transform.position, player.transform.position) <= AttackRange)
         {
             Attack();
         }
     }
 
-    private void OnTriggerStay2D(Collider2D collision)
-    {
-        if (collision.gameObject.CompareTag("Player"))
-        {
-            if (attackSpeed >= canAttack)
-            {
-
-                GameController.DamagePlayer(1);
-                Debug.Log(GameController.Health);
-                canAttack = 0f;
-                //add force to player
-            }
-            else
-            {
-                canAttack += Time.deltaTime;
-            }
-        }
-    }
-
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.gameObject.CompareTag("Player"))
-
-        {
-            target = transform;
-        }
-    }
-
-    void Attack() 
+    //Enemy deals damage to the player
+    void Attack()
     {
         if (!Hit)
         {
             PlayerDamage.Play();
-
             GameController.DamagePlayer(1);
             StartCoroutine(CoolDown());
         }
     }
 
-
-
-
+    //Cooldown between attacks so the enemies won't kill the player instantly.
     private IEnumerator CoolDown()
     {
         Hit = true;
